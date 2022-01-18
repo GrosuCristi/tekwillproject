@@ -1,3 +1,6 @@
+@import "../utils/variables";
+
+
 html {
   background-color: #fff;
   scroll-behavior: smooth;
@@ -16,6 +19,10 @@ body {
   background-color: #fff;
   font-family: 'Playfair Display', serif;
   margin: 0;
+
+  &.scroll-lock {
+    overflow: hidden;
+  }
 }
 
 /* Globals START*/
@@ -70,9 +77,99 @@ header {
       font-size: 2.7em;
       color: #fff;
       white-space: nowrap;
+      cursor: pointer;
+      height: 60px;
     }
   }
 }
 
 
 /* Header END */
+
+
+/* Sidemenu START */
+
+
+#sidemenu {
+  &.open {
+    .overlay {
+      visibility: visible;
+    }
+
+    .menu {
+      visibility: visible;
+      margin-left: 0;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    opacity: 0.5;
+    visibility: hidden;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;
+    transition: margin 0.7s;
+    margin-left: -250px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0 20px;
+        height: 60px;
+        font-weight: 700;
+        border-bottom: #ddd 1px solid;
+        justify-content: left;
+
+        &:not(:first-child) .wrapper span {
+          margin-left: 10px;
+        }
+
+        .wrapper {
+
+          display: flex;
+          align-items: center;
+
+          span {
+            font-size: 1.2rem;
+          }
+
+          i {
+            height: 30px;
+            width: 25px;
+            font-size: 1.2rem;
+          }
+        }
+
+        &:first-child {
+          justify-content: right;
+
+          i {
+            float: right;
+            height: 60px;
+            width: 60px;
+            margin-right: -20px;
+            color: #fff;
+            background-color: $dismiss;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Sidemenu END */

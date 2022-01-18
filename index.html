@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/icons.min.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="./styles/icons.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
 
   <title>Hanul cu Noroc</title>
 </head>
@@ -24,11 +24,51 @@
       <div class="sidemenu-btn flex" id="open-btn">
         <i class="fas fa-bars"></i>
       </div>
-      <span class="logo">Hanul Cu Noroc</span>
+      <a href="/">
+        <span class="logo flex">Hanul Cu Noroc</span>
+      </a>
     </div>
   </header>
 
   <!-- Header END -->
 
+  <!-- Sidemenu START -->
+
+  <div id="sidemenu">
+    <div class="overlay"></div>
+    <div class="menu">
+      <ul>
+        <li>
+          <i id="close-btn" class="fas fa-times flex"></i>
+        </li>
+
+        <li class="flex wrapper">
+          <div class="wrapper">
+            <i class="fas fa-home flex"></i>
+            <span>Principala</span>
+          </div>
+        </li>
+        <li class="flex wrapper">
+          <div class="wrapper">
+            <i class="fas fa-question-circle flex"></i>
+            <span>Despre noi</span>
+          </div>
+        <li class="flex wrapper">
+          <div class="wrapper">
+            <i class="fas fa-address-book flex"></i>
+            <span>Contacte</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sidemenu END -->
+
+  <!-- Scripts START -->
+
+  <script src="./scripts/sidenav.js"></script>
+
+  <!-- Scripts END -->
 </body>
 </html>
