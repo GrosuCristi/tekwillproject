@@ -1,0 +1,78 @@
+html {
+  background-color: #fff;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+/* Globals START*/
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Globals END*/
+
+
+/* Header START */
+
+
+header {
+  background-color: #000;
+  height: 60px;
+
+  .header-top-bar {
+    height: 60px;
+    position: relative;
+    align-items: center;
+
+    .sidemenu-btn {
+      color: #fff;
+      
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Cookie', cursive;
+      font-size: 2em;
+      color: #fff;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+/* Header END */
