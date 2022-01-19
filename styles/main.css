@@ -111,7 +111,7 @@ header .header-bottom-bar ul .active {
 }
 
 header .header-bottom-bar ul li {
-  font-size: 1.2em;
+  font-size: 1rem;
   cursor: pointer;
   color: #fff;
 }
@@ -149,7 +149,7 @@ header .header-bottom-bar ul li:not(:last-child) {
   height: 100vh;
   width: 100vw;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.3;
   visibility: hidden;
 }
 
@@ -194,7 +194,7 @@ header .header-bottom-bar ul li:not(:last-child) {
 }
 
 #sidemenu .menu ul li .wrapper span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 75%;
   display: inline-block;
 }
