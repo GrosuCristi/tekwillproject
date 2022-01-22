@@ -132,6 +132,7 @@ header {
 
 
 #sidemenu {
+
   &.open {
     .overlay {
       visibility: visible;
@@ -152,6 +153,7 @@ header {
     background-color: #000;
     opacity: 0.3;
     visibility: hidden;
+    z-index: 10;
   }
 
   .menu {
@@ -163,6 +165,7 @@ header {
     height: 100vh;
     transition: margin 0.5s;
     margin-left: -250px;
+    z-index: 10;
 
     ul {
       margin: 0;
@@ -219,9 +222,26 @@ header {
 
 /* Sidemenu END */
 
+/* Section 1 START */
+
+
+.swiper-1 {
+  height: calc(100vh - 60px);
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+/* Section 1 END */
+
 
 /* Media Queries START */
 
+
+@media (min-width: 480px) {
+
+}
 
 @media (min-width: 768px) {
   .sidemenu-btn { display: none; }
@@ -229,7 +249,10 @@ header {
   
   header {
     height: 100px;
+  }
 
+  .swiper-1 {
+    height: calc(100vh - 100px)
   }
 }
 
