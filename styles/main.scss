@@ -95,7 +95,7 @@ header {
       transition: 0.3s;
 
       &.on-top-of-greeting {
-        transform: translate(-50%, calc(-50% + 240px));
+        transform: translate(-50%, calc(-50% + 30vh + 80px));
       }
     }
   }
@@ -251,7 +251,7 @@ header {
 
   .wrapper {
     position: absolute;
-    top: 30%;
+    top: 30vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
@@ -342,13 +342,13 @@ header {
     height: 100px;
 
     .logo.on-top-of-greeting {
-      transform: translate(-50%, calc(-50% + 320px)) !important;
+      transform: translate(-50%, calc(-50% + 30vh + 120px)) !important;
       font-size: 3.5rem;
     }
   }
 
   .greeting {
-    height: calc(100vh - 100px)
+    height: calc(100vh - 60px)
   }
 }
 
