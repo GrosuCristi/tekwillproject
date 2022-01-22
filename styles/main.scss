@@ -55,14 +55,26 @@ body {
 header {
   background-color: #000;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 60px;
+  transition: margin-top 0.3s;
+
+  &.shrinked {
+    margin-top: -40px;
+  }
 
   .header-top-bar {
     height: 60px;
     position: relative;
     align-items: center;
+    overflow: visible;
 
     .sidemenu-btn {
-      color: #fff;
+      color: $white-text;
       
       i {
         font-size: 20px;
@@ -76,10 +88,15 @@ header {
       transform: translate(-50%, -50%);
       font-family: 'Cookie', cursive;
       font-size: 2.7em;
-      color: #fff;
+      color: $white-text;
       white-space: nowrap;
       cursor: pointer;
       height: 60px;
+      transition: 0.3s;
+
+      &.on-top-of-greeting {
+        transform: translate(-50%, calc(-50% + 240px));
+      }
     }
   }
 
@@ -230,16 +247,17 @@ header {
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin-top: 60px;
 
   .wrapper {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
 
     .text {
-      color: #fff;
+      color: $white-text;
       font-weight: 700;
       font-size: 2rem;
     }
@@ -250,7 +268,7 @@ header {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    filter: blur(10px) saturate(1.5) brightness(0.75);
+    filter: blur(5px) saturate(1.2) brightness(0.65);
     transform: scale(1.1);
   }
 
@@ -322,6 +340,11 @@ header {
   
   header {
     height: 100px;
+
+    .logo.on-top-of-greeting {
+      transform: translate(-50%, calc(-50% + 320px)) !important;
+      font-size: 3.5rem;
+    }
   }
 
   .greeting {
