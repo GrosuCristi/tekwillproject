@@ -61,10 +61,10 @@ header {
   width: 100%;
   z-index: 2;
   height: 60px;
-  transition: margin-top 0.3s;
+  transition: margin-top 0.4s;
 
   &.shrinked {
-    margin-top: -40px;
+    margin-top: -50px;
   }
 
   .header-top-bar {
@@ -87,15 +87,16 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Cookie', cursive;
-      font-size: 2.7em;
+      font-size: 2.7rem;
       color: $white-text;
       white-space: nowrap;
       cursor: pointer;
       height: 60px;
-      transition: 0.3s;
+      transition: 0.4s;
 
       &.on-top-of-greeting {
         transform: translate(-50%, calc(-50% + 30vh + 80px));
+        font-size: 3.5rem;
       }
     }
   }
@@ -118,9 +119,13 @@ header {
       }
 
       li {
-        font-size: 1rem;
+        font-size: 1.2rem;
         cursor: pointer;
-        color: #fff;
+        color: $white-text;
+
+        &:hover {
+          color: #aaaaaa;
+        }
 
         a {
           display: block;
@@ -340,15 +345,23 @@ header {
   
   header {
     height: 100px;
+  }
 
-    .logo.on-top-of-greeting {
-      transform: translate(-50%, calc(-50% + 30vh + 120px)) !important;
-      font-size: 3.5rem;
-    }
+  .logo.on-top-of-greeting {
+    transform: translate(-50%, calc(-50% + 30vh + 130px)) !important;
+    font-size: 4.5rem !important;
   }
 
   .greeting {
-    height: calc(100vh - 60px)
+    height: calc(100vh - 50px) !important;
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .logo.on-top-of-greeting {
+    transform: translate(-50%, calc(-50% + 30vh + 140px)) !important;
+    font-size: 5.5rem !important;
   }
 }
 
