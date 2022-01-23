@@ -85,9 +85,13 @@ header {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       font-family: 'Cookie', cursive;
-      font-size: 2.7rem;
+
+      // safari bug fix:
+      font-size: 3.5rem;
+      transform: translate(-50%, -50%) scale(0.7714);
+      // safari bug fix END.
+
       color: $white-text;
       white-space: nowrap;
       cursor: pointer;
@@ -95,8 +99,8 @@ header {
       transition: 0.4s;
 
       &.on-top-of-greeting {
-        transform: translate(-50%, calc(-50% + 30vh + 80px));
-        font-size: 3.5rem;
+        transform: translate(-50%, calc(-50% + 30vh + 80px)) scale(1);
+        //font-size: 3.5rem;
       }
     }
   }
@@ -347,9 +351,13 @@ header {
     height: 100px;
   }
 
-  .logo.on-top-of-greeting {
-    transform: translate(-50%, calc(-50% + 30vh + 130px)) !important;
-    font-size: 4.5rem !important;
+  body header .header-top-bar .logo {
+    font-size: 4.5rem;
+    transform: translate(-50%, -50%) scale(0.6);
+
+    &.on-top-of-greeting {
+      transform: translate(-50%, calc(-50% + 30vh + 130px)) scale(1);
+    }
   }
 
   .greeting {
@@ -359,9 +367,13 @@ header {
 }
 
 @media (min-width: 1024px) {
-  body .logo.on-top-of-greeting {
-    transform: translate(-50%, calc(-50% + 30vh + 140px)) !important;
+  .logo {
     font-size: 5.5rem !important;
+    transform: translate(-50%, -50%) scale(0.4909) !important;
+
+    &.on-top-of-greeting {
+      transform: translate(-50%, calc(-50% + 30vh + 140px)) !important;
+    }
   }
 }
 
