@@ -61,10 +61,10 @@ header {
   width: 100%;
   z-index: 2;
   height: 60px;
-  transition: margin-top 0.4s;
+  transition: top 0.4s;
 
   &.shrinked {
-    margin-top: -50px;
+    top: -50px;
   }
 
   .header-top-bar {
