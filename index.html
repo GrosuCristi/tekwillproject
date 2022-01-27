@@ -7,8 +7,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
   <link rel="stylesheet" href="./styles/icons.min.css">
   <link rel="stylesheet" href="./styles/main.css">
@@ -24,22 +26,24 @@
       <div class="sidemenu-btn flex" id="open-btn">
         <i class="fas fa-bars"></i>
       </div>
-      <a href="/">
-        <span class="logo flex">Hanul Cu Noroc</span>
-      </a>
+      
+      <span class="logo flex on-top-of-greeting">Hanul Cu Noroc</span>
     </div>
 
     <div class="flex header-bottom-bar">
       <nav>
         <ul>
           <li class="active">
-            <a href="/"><span>Principala</span></a>
+            <span>Principală</span>
+          </li>
+          <li>
+            <span>Facilități</span>
+          </li>
+          <li>
+            <span>Testimoniale</span>
           </li>
           <li>
             <span>Contacte</span>
-          </li>
-          <li>
-            <span>Despre noi</span>
           </li>
         </ul>
       </nav>
@@ -61,14 +65,21 @@
         <li class="flex wrapper">
           <div class="wrapper">
             <i class="fas fa-home"></i>
-            <span>Principala</span>
+            <span>Principală</span>
           </div>
         </li>
         <li class="flex wrapper">
           <div class="wrapper">
-            <i class="fas fa-question-circle"></i>
-            <span>Despre noi</span>
+            <i class="fas fa-bed"></i>
+            <span>Facilități</span>
           </div>
+        </li>
+        <li class="flex wrapper">
+          <div class="wrapper">
+            <i class="fas fa-user-alt"></i>
+            <span>Testimoniale</span>
+          </div>
+        </li>
         <li class="flex wrapper">
           <div class="wrapper">
             <i class="fas fa-address-book"></i>
@@ -81,9 +92,29 @@
 
   <!-- Sidemenu END -->
 
+  <!-- Section 1 START -->
+
+  <div class="greeting">
+    <img src="./images/greeting.jpeg" alt="scranciob">
+    <div class="wrapper">
+      <span class="text">bine ai venit la</span>
+    </div>
+    <div class="arrows flex">
+      <div class="a1"></div>
+      <div class="a2"></div>
+      <div class="a3"></div>
+    </div>
+  </div>
+
+  <!-- Section 1 END -->
+
+  <div style="height: 300px;"></div>
+
   <!-- Scripts START -->
 
   <script src="./scripts/sidenav.js"></script>
+  <script type="module" src="./scripts/swipers.js"></script>
+  <script src="./scripts/header.js"></script>
 
   <!-- Scripts END -->
 </body>

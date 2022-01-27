@@ -19,7 +19,7 @@ ul {
 
 body {
   background-color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif', serif;
   margin: 0;
 
   &.scroll-lock {
@@ -55,14 +55,27 @@ body {
 header {
   background-color: #000;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 60px;
+  transition: top 0.4s;
+  display: block;
+
+  &.shrinked {
+    top: -50px;
+  }
 
   .header-top-bar {
     height: 60px;
     position: relative;
     align-items: center;
+    overflow: visible;
 
     .sidemenu-btn {
-      color: #fff;
+      color: $white-text;
       
       i {
         font-size: 20px;
@@ -73,13 +86,23 @@ header {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       font-family: 'Cookie', cursive;
-      font-size: 2.7em;
-      color: #fff;
+
+      // safari bug fix:
+      font-size: 3.5rem;
+      transform: translate(-50%, -50%) scale(0.7714);
+      // safari bug fix END.
+
+      color: $white-text;
       white-space: nowrap;
       cursor: pointer;
       height: 60px;
+      transition: transform 0.4s;
+
+      &.on-top-of-greeting {
+        transform: translate(-50%, calc(-50% + 30vh + 80px)) scale(1);
+        //font-size: 3.5rem;
+      }
     }
   }
 
@@ -101,9 +124,13 @@ header {
       }
 
       li {
-        font-size: 1rem;
+        font-size: 1.2rem;
         cursor: pointer;
-        color: #fff;
+        color: $white-text;
+
+        &:hover {
+          color: #aaaaaa;
+        }
 
         a {
           display: block;
@@ -132,6 +159,7 @@ header {
 
 
 #sidemenu {
+
   &.open {
     .overlay {
       visibility: visible;
@@ -152,6 +180,7 @@ header {
     background-color: #000;
     opacity: 0.3;
     visibility: hidden;
+    z-index: 10;
   }
 
   .menu {
@@ -163,6 +192,7 @@ header {
     height: 100vh;
     transition: margin 0.5s;
     margin-left: -250px;
+    z-index: 10;
 
     ul {
       margin: 0;
@@ -219,9 +249,94 @@ header {
 
 /* Sidemenu END */
 
+/* Section 1 START */
+
+
+.greeting {
+  height: calc(100vh - 60px);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 60px;
+
+  .wrapper {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+
+    .text {
+      color: $white-text;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(5px) saturate(1.2) brightness(0.65);
+    transform: scale(1.1);
+  }
+
+  // Arrows
+  .arrows {
+    width: 61px;
+    // height: 73px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 10vh;
+    flex-direction: column;
+    transform: scale(0.75);
+  }
+  
+  .arrows div {
+    height: 15px;
+    width: 15px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    animation: arrow 2s infinite;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes arrow {
+    0% {opacity:0}
+    10% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+  }
+  
+  .arrows .a1 {
+    animation-delay: -0.45s;
+  }
+  
+  .arrows .a2 {
+    animation-delay: -0.30s;
+  }
+  
+  .arrows .a3 {	
+    animation-delay: -0.15s;
+  }
+
+  .arrows .a4 {	
+    animation-delay: 0s;
+  }
+}
+
+
+/* Section 1 END */
+
 
 /* Media Queries START */
 
+
+@media (min-width: 480px) {
+
+}
 
 @media (min-width: 768px) {
   .sidemenu-btn { display: none; }
@@ -229,7 +344,31 @@ header {
   
   header {
     height: 100px;
+  }
 
+  body header .header-top-bar .logo {
+    font-size: 4.5rem;
+    transform: translate(-50%, -50%) scale(0.6);
+
+    &.on-top-of-greeting {
+      transform: translate(-50%, calc(-50% + 30vh + 130px)) scale(1);
+    }
+  }
+
+  .greeting {
+    height: calc(100vh - 50px) !important;
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    font-size: 5.5rem !important;
+    transform: translate(-50%, -50%) scale(0.4909) !important;
+
+    &.on-top-of-greeting {
+      transform: translate(-50%, calc(-50% + 30vh + 140px)) !important;
+    }
   }
 }
 
