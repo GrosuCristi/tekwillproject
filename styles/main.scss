@@ -331,6 +331,39 @@ header {
 /* Section 1 END */
 
 
+/* Slider START */
+
+
+.slide {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+	  "d e"
+	  "a c"
+	  "f c"
+	  "f b";
+    grid-gap: 5px;
+	margin: 5px; padding: 0;
+    img {
+      width: 100%; 
+      height: auto;
+      filter: grayscale(60%);
+      transition: filter 0.6s;
+    }
+    img:hover { filter: none; }
+
+  .a { grid-area: a; }
+  .b { grid-area: b; }
+  .c { grid-area: c; }
+  .d { grid-area: d; }
+  .e { grid-area: e; }
+  .f { grid-area: f; }
+}
+
+/* Slider END */
+
+
 /* Media Queries START */
 
 
