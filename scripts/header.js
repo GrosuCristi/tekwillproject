@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  if (screen.width > 768) header.classList.add('shrinked')
-})
+document.addEventListener('DOMContentLoaded', animatedLogo)
 
 const logo = document.querySelector('.logo');
 const header = document.querySelector('header');
