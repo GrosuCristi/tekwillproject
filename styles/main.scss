@@ -31,7 +31,7 @@ body {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
@@ -68,6 +68,32 @@ body {
 }
 
 /* Globals END*/
+
+
+/* On load overlay START */
+
+
+.onload-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 100;
+  animation: onload 1s forwards;
+  pointer-events: none;
+
+  @keyframes onload {
+    0% { opacity: 1; }
+    40% { opacity: 1; }
+    //80% { opacity: 0.1; }
+    100% { opacity: 0; }
+  }
+}
+
+
+/* On load overlay END */
 
 
 /* Header START */
@@ -319,7 +345,7 @@ header {
     height: 15px;
     width: 15px;
     border: solid #fff;
-    border-width: 0 2px 2px 0;
+    border-width: 0 3px 3px 0;
     animation: arrow 2s infinite;
     transform: rotate(45deg);
   }
@@ -358,7 +384,7 @@ footer {
   min-height: 100px;
   width: 100%;
   background-color: #000;
-  padding: 40px 0;
+  padding: 40px 0 20px;
 
   > .flex {
     justify-content: flex-start;
@@ -525,10 +551,6 @@ footer {
   footer {
     padding-top: 80px;
 
-    .disclaimer {
-      margin-top: 80px;
-    }
-
     > .flex {
       flex-direction: row;
       justify-content: space-between;
@@ -538,11 +560,11 @@ footer {
         margin-top: 0 !important;
 
         &:first-child {
-          flex-grow: 0.3;
+          flex-grow: 0.4;
         }
 
         &:nth-child(3) {
-          flex-grow: 0.1;
+          flex-grow: 0.05;
         }
 
         form {
