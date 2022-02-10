@@ -27,6 +27,11 @@ body {
   }
 }
 
+::selection {
+  background-color: blueviolet;
+  color: black;
+}
+
 /* Globals START*/
 
 
@@ -108,11 +113,11 @@ header {
   width: 100%;
   z-index: 3;
   height: 60px;
-  transition: top 0.4s;
+  transition: transform 0.4s;
   display: block;
 
   &.shrinked {
-    top: -50px;
+    transform: translateY(-50px);
   }
 
   .header-top-bar {
@@ -214,7 +219,7 @@ header {
 
     .menu {
       visibility: visible;
-      margin-left: 0;
+      transform: translateX(0);
     }
   }
 
@@ -237,8 +242,8 @@ header {
     background-color: #fff;
     width: 250px;
     height: 100vh;
-    transition: margin 0.5s;
-    margin-left: -250px;
+    transition: transform 0.5s;
+    transform: translateX(-250px);
     z-index: 10;
 
     ul {
@@ -327,6 +332,7 @@ header {
     object-position: center;
     filter: blur(5px) saturate(1.2) brightness(0.65);
     transform: scale(1.1);
+    user-select: none;
   }
 
   // Arrows
@@ -381,7 +387,7 @@ header {
 /* Facilitati START */
 
 .facilities {
-  margin: 40px 0 80px 0;
+  margin-top: 40px;
 
   > h1 {
     margin: 0;
@@ -423,6 +429,72 @@ header {
 }
 
 /* Facilitati END */
+
+
+/* Contacts START */
+
+.contacts {
+  margin-top: 80px;
+  margin-bottom: 40px;
+
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    
+    .contact-us-title {
+      margin: 0;
+    }
+    
+    .side {
+      background-color: #000;
+      color: $white-text;
+      padding: 20px;
+      padding-bottom: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      .subtext {
+        margin: 10px 0 0 0;
+        font-size: 0.8rem;
+        font-family: 'Noto Sans', sans-serif;
+        color: darken($white-text, 40%);
+        font-weight: 700;
+      }
+
+      .contact-data {
+        width: 100%;
+        max-width: 240px;
+        margin-top: 20px;
+
+        tr:not(:last-child) .subtext {
+          margin: 5px 0 20px 0;
+        }
+        
+        .icon {
+          width: 20px;
+          padding-right: 20px;
+          font-size: 1.2rem;
+          text-align: center;
+          vertical-align: top;
+          color: $primary;
+        }
+
+        .title {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px;
+    }
+  }
+}
+
+/* Contacts END */
 
 
 /* Footer START */
@@ -572,6 +644,30 @@ footer {
       font-size: 1rem !important;
     }
   }
+
+  body .contacts .wrapper .side {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 540px) {
+  body .contacts .wrapper .side {
+    flex-direction: row;
+    padding: 40px 20px;
+
+    .introduction {
+      margin: auto;
+    }
+    
+    .introduction .subtext {
+      max-width: 220px;
+    }
+
+    .contact-data {
+      margin-top: 0;
+      margin-right: 20px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -594,6 +690,26 @@ footer {
   .greeting {
     height: calc(100vh - 50px) !important;
     margin-top: 50px !important;
+  }
+
+  body .contacts .wrapper {
+    flex-direction: row;
+    align-items: stretch;
+
+    .side {
+      min-width: 420px;
+      max-width: 50%;
+      //flex-grow: 0.5;
+
+      .contact-data .icon {
+        font-size: 1.4rem;
+      }
+    }
+    
+    .map {
+      height: 100%;
+      margin: 0;
+    }
   }
 }
 
