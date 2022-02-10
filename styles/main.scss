@@ -116,10 +116,6 @@ header {
   transition: transform 0.4s;
   display: block;
 
-  &.shrinked {
-    transform: translateY(-50px);
-  }
-
   .header-top-bar {
     height: 60px;
     position: relative;
@@ -676,6 +672,10 @@ footer {
   
   header {
     height: 100px;
+
+    &.shrinked {
+      transform: translateY(-50px);
+    }
   }
 
   body header .header-top-bar .logo {
