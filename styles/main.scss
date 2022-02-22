@@ -455,7 +455,6 @@ header {
         font-size: 0.8rem;
         font-family: 'Noto Sans', sans-serif;
         color: darken($white-text, 40%);
-        font-weight: 700;
       }
 
       .contact-data {
@@ -661,6 +660,7 @@ footer {
 
     .contact-data {
       margin-top: 0;
+      margin-left: 20px;
       margin-right: 20px;
     }
   }
@@ -697,7 +697,7 @@ footer {
     align-items: stretch;
 
     .side {
-      min-width: 420px;
+      min-width: 450px;
       max-width: 50%;
       //flex-grow: 0.5;
 
