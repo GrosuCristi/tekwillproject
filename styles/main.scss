@@ -443,8 +443,8 @@ header {
       top: 0;
       left: 0;
       height: 100%;
-      width: 20px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+      width: 15px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
       z-index: 1;
     }
 
@@ -455,7 +455,7 @@ header {
       right: 0;
       height: 100%;
       width: 15px;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
       z-index: 1;
     }
 
@@ -463,13 +463,13 @@ header {
       margin-bottom: 5px;
 
       .image-wrapper {
-        animation: slider-one 40s cubic-bezier(.1,0,.9,1) infinite alternate;
+        animation: slider-one 30s cubic-bezier(.1,0,.9,1) infinite alternate;
       }
     }
 
     &:nth-child(2) .image-wrapper {
       transform: translateX(-50%);
-      animation: slider-two 40s cubic-bezier(.1,0,.9,1) infinite alternate;
+      animation: slider-two 30s cubic-bezier(.1,0,.9,1) infinite alternate;
     }
   
     .image-wrapper {
@@ -490,12 +490,12 @@ header {
         height: 100%;
         object-fit: cover;
         object-position: center;
-        transform: scale(1.2);
+        transform: scale(1);
         transition: transform 0.8s;
       }
 
       &:hover img {
-        transform: scale(1);
+        transform: scale(1.2);
       }
     }
   }
@@ -503,12 +503,12 @@ header {
 
 @keyframes slider-one {
   from { transform: translateX(0); }
-  to { transform: translateX(-600%); } // 100% * 6 pentru a rula 6 poze
+  to { transform: translateX(-500%); } // 100% * 5 pentru a rula 5 poze
 }
 
 @keyframes slider-two {
   from { transform: translateX(-50%); }
-  to { transform: translateX(-650%); } // 100% * 6 pentru a rula 6 poze
+  to { transform: translateX(-550%); } // 100% * 5 pentru a rula 5 poze
 }
 
 /* Gallery END */
@@ -786,6 +786,14 @@ footer {
 
     .image-wrapper:not(:first-child) {
       margin-left: 10px;
+    }
+
+    &::before {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &::after {
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
     }
   }
 
