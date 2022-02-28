@@ -1,0 +1,55 @@
+.facilities {
+  margin-top: 40px;
+
+  > h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  > .flex {
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .sibling {
+      align-items: center;
+      margin-bottom: 60px;
+      flex-basis: 50%;
+      display: block;
+      height: fit-content;
+
+      &:last-child,
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+
+      i {
+        background-color: $primary;
+        width: 100%;
+        max-width: 30px;
+        height: 30px;
+        margin: 0 auto;
+      }
+
+      .title {
+        font-size: 0.8rem;
+        line-height: 100%;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+      }
+
+      .para {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 0;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+header {
+  background-color: #000;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  height: 60px;
+  transition: transform 0.4s;
+  display: block;
+
+  .header-top-bar {
+    height: 60px;
+    position: relative;
+    align-items: center;
+    overflow: visible;
+
+    .sidemenu-btn {
+      color: $white-text;
+      
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-family: 'Cookie', cursive;
+
+      // safari bug fix:
+      font-size: 3.5rem;
+      transform: translate(-50%, -50%) scale(0.7714);
+      // safari bug fix END.
+
+      color: $white-text;
+      white-space: nowrap;
+      cursor: pointer;
+      //height: 60px;
+      transition: transform 0.4s;
+
+      &.on-top-of-greeting {
+        transform: translate(-50%, calc(-50% + 30vh + 80px)) scale(1);
+        //font-size: 3.5rem;
+      }
+    }
+  }
+
+  .header-bottom-bar {
+    height: 40px;
+    align-items: flex-start;
+    display: none;
+
+    nav {
+      height: 100%;
+    }
+
+    ul {
+      height: 100%;
+      display: flex;
+
+      .active {
+        border-bottom: $primary 4px solid;
+      }
+
+      li {
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: $white-text;
+
+        &:hover {
+          color: darken($white-text, 40%);
+        }
+
+        a {
+          display: block;
+          height: 100%;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &.active a {
+          height: calc(100% + 4px);
+        }
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
