@@ -4,6 +4,7 @@
 @import "./partials/footer";
 @import "./partials/greeting";
 @import "./partials/facilities";
+@import "./partials/reviews";
 @import "./partials/gallery";
 @import "./partials/contacts";
 @import "./partials/sidemenu";
@@ -25,6 +26,12 @@
 
     .title {
       font-size: 1rem !important;
+    }
+  }
+
+  body .reviews {
+    .title {
+      font-size: 1.4rem;
     }
   }
 
@@ -52,6 +59,18 @@
       margin-right: 20px;
     }
   }
+
+  .facilities > h1 {
+    font-size: 2rem;
+  }
+
+  body .reviews .container {
+    padding-bottom: 80px;
+  }
+
+  body .reviews .title {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -78,6 +97,10 @@
   .greeting {
     height: calc(100vh - 50px) !important;
     margin-top: 50px !important;
+  }
+
+  body .reviews .reviews-wrapper .review {
+    flex-basis: calc(50% - 20px);
   }
 
   #gallery .slider-wrapper .slider-row {
@@ -120,28 +143,20 @@
 }
 
 @media (min-width: 896px) {
-  .facilities {
-    margin-top: 80px;
+  .facilities .sibling {
+    flex-basis: 33.3333% !important;
+    margin-bottom: 80px !important;
 
-    > h1 {
-      font-size: 3rem;
+    &:nth-last-child(3),
+    &:nth-last-child(2),
+    &:last-child {
+      margin-bottom: 0 !important;
     }
+  }
 
-    > .flex {
-      margin-top: 80px;
-    }
-
-    .sibling {
-      flex-basis: 33.3333% !important;
-      margin-bottom: 80px !important;
-  
-      &:nth-last-child(3),
-      &:nth-last-child(2),
-      &:last-child {
-        margin-bottom: 0 !important;
-      }
-    }
-  } 
+  body .reviews .title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -151,6 +166,41 @@
 
     &.on-top-of-greeting {
       transform: translate(-50%, calc(-50% + 30vh + 140px)) !important;
+    }
+  }
+
+  .facilities {
+    margin-top: 60px;
+
+    > h1 {
+      font-size: 2.5rem;
+    }
+
+    > .flex {
+      margin-top: 60px;
+    }
+  }
+
+  body .reviews {
+    margin-top: 100px;
+
+    .title {
+      font-size: 2.5rem;
+      margin: 60px auto;
+    }
+
+    .reviews-wrapper {
+      column-gap: 100px;
+      row-gap: 80px;
+      max-width: 900px;
+
+      .review {
+        flex-basis: calc(50% - 50px);
+      }
+    }
+
+    .container {
+      padding-bottom: 100px;
     }
   }
 
