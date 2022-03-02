@@ -1,5 +1,8 @@
 .facilities {
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: $facilities-bg;
+  color: $white-text;
 
   > h1 {
     margin: 0;
@@ -35,7 +38,7 @@
       .title {
         font-size: 0.8rem;
         line-height: 100%;
-        font-weight: 700;
+        font-weight: 500;
         font-family: 'Noto Sans', sans-serif;
         text-align: center;
         display: block;

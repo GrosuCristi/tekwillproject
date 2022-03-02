@@ -1,6 +1,7 @@
 .contacts {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: $contact-bg;
 
   .wrapper {
     flex-direction: column;
@@ -11,7 +12,7 @@
     }
     
     .side {
-      background-color: #000;
+      background-color: $contactbox-bg;
       color: $white-text;
       padding: 20px;
       padding-bottom: 30px;
@@ -23,7 +24,7 @@
         margin: 10px 0 0 0;
         font-size: 0.8rem;
         font-family: 'Noto Sans', sans-serif;
-        color: darken($white-text, 40%);
+        color: darken($white-text, 20%);
       }
 
       .contact-data {

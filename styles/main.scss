@@ -117,11 +117,11 @@
     }
 
     &::before {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+      background-image: linear-gradient(to right, rgba($gallery-bg, 1) 10%, rgba($gallery-bg, 0) 100%);
     }
 
     &::after {
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+      background-image: linear-gradient(to left, rgba($gallery-bg, 1) 10%, rgba($gallery-bg, 0) 100%);
     }
   }
 
@@ -174,7 +174,8 @@
   }
 
   .facilities {
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 100px;
 
     > h1 {
       font-size: 2.5rem;
@@ -186,7 +187,6 @@
   }
 
   body .reviews {
-    margin-top: 100px;
 
     .title {
       font-size: 2.5rem;
