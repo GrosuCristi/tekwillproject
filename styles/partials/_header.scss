@@ -46,6 +46,19 @@ header {
         //font-size: 3.5rem;
       }
     }
+
+    .svg-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: Min(70vw, 800px);
+      fill: #fff;
+      
+      &.on-top-of-greeting {
+
+      }
+    }
   }
 
   .header-bottom-bar {
