@@ -32,6 +32,7 @@ header {
       transition: transform 0.4s;
       object-fit: cover;
       pointer-events: none;
+      user-select: none;
     }
   }
 
@@ -48,14 +49,20 @@ header {
       height: 100%;
       display: flex;
 
-      .active {
-        border-bottom: $primary 4px solid;
+      .active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        animation: active-border 0.4s forwards;
+        animation-delay: 0.2s;
       }
 
       li {
         font-size: 1.2rem;
         cursor: pointer;
         color: $white-text;
+        position: relative;
 
         &:hover {
           color: darken($white-text, 40%);
@@ -70,5 +77,20 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes active-border {
+  from {
+    opacity: 0.6;
+    left: 10px;
+    right: 10px;
+  }
+
+  to {
+    opacity: 1;
+    background-color: $primary;
+    left: 0;
+    right: 0;
   }
 }

@@ -50,14 +50,16 @@ function setNavActivity(sectionTarget, navListId) {
 }
 
 function scrollToSection(destId, sidemenu=false) {
+  let delay = 0
   if (sidemenu) {
     document.getElementById('sidemenu').classList.remove('open')
     document.querySelector('body').classList.remove('scroll-lock')
+    delay = 250
   }
+
   setTimeout(() => {
-    if (destId === 'greeting')
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    else 
-      document.getElementById(destId).scrollIntoView({ behavior: 'smooth', block: 'center'})
-  }, 250)
+    let offset = document.getElementById(destId).offsetTop
+    offset = window.innerWidth >= 768 ? offset-100 : offset-60
+    window.scrollTo({ top: offset, left: 0, behavior: 'smooth' })
+  }, delay)
 }
