@@ -1,0 +1,59 @@
+.contacts {
+  margin-top: 80px;
+  margin-bottom: 40px;
+
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    
+    .contact-us-title {
+      margin: 0;
+    }
+    
+    .side {
+      background-color: #000;
+      color: $white-text;
+      padding: 20px;
+      padding-bottom: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      .subtext {
+        margin: 10px 0 0 0;
+        font-size: 0.8rem;
+        font-family: 'Noto Sans', sans-serif;
+        color: darken($white-text, 40%);
+      }
+
+      .contact-data {
+        width: 100%;
+        max-width: 240px;
+        margin-top: 20px;
+
+        tr:not(:last-child) .subtext {
+          margin: 5px 0 20px 0;
+        }
+        
+        .icon {
+          width: 20px;
+          padding-right: 20px;
+          font-size: 1.2rem;
+          text-align: center;
+          vertical-align: top;
+          color: $primary;
+        }
+
+        .title {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px;
+    }
+  }
+}

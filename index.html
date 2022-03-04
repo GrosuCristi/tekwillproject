@@ -31,23 +31,22 @@
       <div class="sidemenu-btn flex" id="open-btn">
         <i class="fas fa-bars"></i>
       </div>
-      
-      <span class="logo flex on-top-of-greeting">Hanul Cu Noroc</span>
+      <img class="svg-logo on-top-of-greeting" src="./images/logo.svg" alt="logo">
     </div>
 
     <div class="flex header-bottom-bar">
       <nav>
-        <ul>
-          <li class="active">
+        <ul id="nav-list">
+          <li data-pointsto="greeting" class="active" onclick="scrollToSection('greeting')">
             <span>Principală</span>
           </li>
-          <li>
+          <li data-pointsto="facilities" onclick="scrollToSection('facilities')">
             <span>Facilități</span>
           </li>
-          <li>
-            <span>Testimoniale</span>
+          <li data-pointsto="reviews" onclick="scrollToSection('reviews')"> 
+            <span>Recenzii</span>
           </li>
-          <li>
+          <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
             <span>Contacte</span>
           </li>
         </ul>
@@ -67,25 +66,25 @@
           <i id="close-btn" class="fas fa-times flex"></i>
         </li>
 
-        <li class="flex wrapper">
+        <li class="flex wrapper" onclick="scrollToSection('greeting', true)">
           <div class="wrapper">
             <i class="fas fa-home"></i>
             <span>Principală</span>
           </div>
         </li>
-        <li class="flex wrapper">
+        <li class="flex wrapper" onclick="scrollToSection('facilities', true)">
           <div class="wrapper">
             <i class="fas fa-bed"></i>
             <span>Facilități</span>
           </div>
         </li>
-        <li class="flex wrapper">
+        <li class="flex wrapper" onclick="scrollToSection('reviews', true)">
           <div class="wrapper">
             <i class="fas fa-user-alt"></i>
-            <span>Testimoniale</span>
+            <span>Recenzii</span>
           </div>
         </li>
-        <li class="flex wrapper">
+        <li class="flex wrapper" onclick="scrollToSection('contacts', true)">
           <div class="wrapper">
             <i class="fas fa-address-book"></i>
             <span>Contacte</span>
@@ -99,49 +98,67 @@
 
   <!-- Section 1 START -->
 
-  <div class="greeting">
+  <section id="greeting" class="greeting">
     <img src="./images/greeting.jpeg" alt="scranciob">
     <div class="wrapper">
       <span class="text">bine ai venit la</span>
     </div>
     <div class="arrows flex">
-      <div class="a1"></div>
-      <div class="a2"></div>
-      <div class="a3"></div>
+      <div class="arr1"></div>
+      <div class="arr2"></div>
+      <div class="arr3"></div>
     </div>
-  </div>
+  </section>
 
   <!-- Section 1 END -->
 
 
   <!-- Facilitati START -->
 
-  <section class="facilities">
+  <section id="facilities" class="facilities">
     <h1>Facilități</h1>
     <div class="container flex">
       <div class="sibling">
         <i class="fas fa-campground flex"></i>
-        <span class="text">Spațiu amenajat</span>
+        <span class="title">Spațiu amenajat</span>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+        </p>
       </div>
       <div class="sibling">
         <i class="fas fa-shower flex"></i>
-        <span class="text">Apă caldă</span>
+        <span class="title">Apă caldă</span>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+        </p>
       </div>
       <div class="sibling">
         <i class="fab fa-gripfire flex"></i>
-        <span class="text">Loc pentru gătit</span>
+        <span class="title">Loc pentru gătit</span>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+        </p>
       </div>
       <div class="sibling">
         <i class="fas fa-user flex"></i>
-        <span class="text">Camere de 4 persoane</span>
+        <span class="title">4P per camera</span>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+        </p>
       </div>
       <div class="sibling">
         <i class="fas fa-child flex"></i>
-        <span class="text">Teren de joacă</span>
+        <span class="title">Teren de joacă</span>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+        </p>
       </div>
       <div class="sibling">
         <i class="fas fa-fan flex"></i>
-        <span class="text">Aer condiționat</span>
+        <span class="title">Aer condiționat</span>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+        </p>
       </div>
     </div>
   </section>
@@ -149,9 +166,112 @@
   <!-- Facilitati END -->
 
 
+  <!-- Reviews START -->
+
+  <section id="reviews" class="reviews">
+    <img src="./images/hills.jpg" alt="hills">
+    <div class="container">
+      <h1 class="title">Comentarii</h1>
+      <div class="reviews-wrapper">
+        <div class="review">
+          <div class="user">
+            <i class="fas fa-user-circle"></i>
+            <span class="name">Marcel J</span>
+          </div>
+          <div class="intro">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="timestamp">Acum 7 luni</span>
+          </div>
+          <p class="description">
+            O locatie minunata, o liniste tamaduitoare,aer curat si o natura de poveste! Conditii destul de bune,si o atmosfera ca acasa! Recomanam cu incredere,mai ales ca stapinul dl Nicolae este un izvor de cunostinte!
+          </p>
+        </div>
+        <div class="review">
+          <div class="user">
+            <i class="fas fa-user-circle"></i>
+            <span class="name">Catalina F</span>
+          </div>
+          <div class="intro">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="timestamp">Acum 6 luni</span>
+          </div>
+          <p class="description">
+            Frumos și liniște! E aproape de plajele de la Costești, sunt toate condițiile de care poți avea nevoie. În plus, peisajul de pe deal îți ia răsuflarea, perfect pentru a întîmpina sau petrece soarele!          </p>
+        </div>
+        <div class="review">
+          <div class="user">
+            <i class="fas fa-user-circle"></i>
+            <span class="name">Jane F</span>
+          </div>
+          <div class="intro">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="timestamp">Acum un an</span>
+          </div>
+          <p class="description">
+            Totul a fost perfect, localizarea este ideala, acces facil, peisaje de vis. Curățenia exemplară, posibilitatea de a face mâncare în aer liber, gazdele foarte amabile și atente la micile detalii au făcut ca odihna să fie memorabilă.          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews END -->
+
+
+  <!-- Gallery START -->
+
+  <section id="gallery">
+    <div class="container slider-wrapper">
+      <div class="slider-row">
+        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+        
+        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+      </div>
+      <div class="slider-row">
+        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+
+        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery END -->
+
+
   <!-- Contacts START -->
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="container">
       <div class="wrapper flex">
         <div class="side">
@@ -277,6 +397,7 @@
 
   <script src="./scripts/header.js"></script>
   <script src="./scripts/sidenav.js"></script>
+  <script src="./scripts/menu_links.js"></script>
 
   <!-- Scripts END -->
 </body>

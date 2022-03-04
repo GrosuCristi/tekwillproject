@@ -1,0 +1,71 @@
+.greeting {
+  height: calc(100vh - 60px);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 60px;
+
+  .wrapper {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    display: flex;
+
+    .text {
+      color: $white-text;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  }
+
+  > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(5px) saturate(1.2) brightness(0.65);
+    transform: scale(1.1);
+    user-select: none;
+  }
+
+  // Arrows
+  .arrows {
+    width: 61px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 10vh;
+    flex-direction: column;
+    transform: scale(0.75);
+  }
+  
+  .arrows div {
+    height: 15px;
+    width: 15px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    animation: arrow 2s infinite;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes arrow {
+    0% { opacity:0 }
+    10% { opacity:1 }
+    80% { opacity:0 }
+    100% { opacity:0 }
+  }
+  
+  .arrows .arr1 {
+    animation-delay: -0.45s;
+  }
+  
+  .arrows .arr2 {
+    animation-delay: -0.30s;
+  }
+  
+  .arrows .arr3 {	
+    animation-delay: -0.15s;
+  }
+}

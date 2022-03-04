@@ -1,0 +1,124 @@
+footer {
+  min-height: 100px;
+  width: 100%;
+  background-color: #000;
+  padding: 40px 0 20px;
+
+  > .flex {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .sibling {
+      width: 100%;
+
+      h3 {
+        color: $white-text;
+        margin-top: 0;
+      }
+    }
+
+    .sibling:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  .logo {
+    font-family: 'Cookie', cursive;
+    font-size: 2.7em;
+    color: $white-text;
+  }
+
+  form {
+    max-width: 400px;
+
+    input[type="email"] {
+      display: block;
+      width: 100%;
+      max-width: inherit;
+      margin-bottom: 10px;
+    }
+
+    button {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      font-family: 'Noto Serif', serif;
+      background-color: $primary;
+      border: none;
+      width: 140px;
+      width: 100%;
+      height: 35px;
+      padding: 0;
+      color: #000;
+      cursor: pointer;
+
+      i {
+        font-size: 1rem;
+        margin-right: 10px;
+      }
+
+      span {
+        line-height: 75%;
+      }
+
+      &:hover {
+        border: 4px solid darken($primary, 15%);
+      }
+    }
+  }
+
+  .footer-nav-list {
+    color: $white-text;
+
+    li {
+      height: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: fit-content;
+
+      .arrow {
+        transition: 0.3s;
+        transform: translateX(-10px);
+        opacity: 0;
+      }
+
+      &:hover {
+        span {
+          color: $primary;
+        }
+
+        .arrow {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+
+    i {
+      width: 30px;
+      text-align: center;
+      margin-right: 5px;
+    }
+  }
+
+  .social {
+    color: $white-text;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+
+    i {
+      cursor: pointer;
+    }
+
+    i:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .disclaimer {
+    color: $disclaimer-color;
+    font-size: 0.8rem;
+    margin-top: 40px;
+  }
+}
