@@ -31,24 +31,22 @@
       <div class="sidemenu-btn flex" id="open-btn">
         <i class="fas fa-bars"></i>
       </div>
-      
-      <span class="logo flex on-top-of-greeting">Hanul Cu Noroc</span>
       <img class="svg-logo on-top-of-greeting" src="./images/logo.svg" alt="logo">
     </div>
 
     <div class="flex header-bottom-bar">
       <nav>
-        <ul>
-          <li class="active">
+        <ul id="nav-list">
+          <li data-pointsto="greeting" class="active" onclick="scrollToSection('greeting')">
             <span>Principală</span>
           </li>
-          <li>
+          <li data-pointsto="facilities" onclick="scrollToSection('facilities')">
             <span>Facilități</span>
           </li>
-          <li>
-            <span>Testimoniale</span>
+          <li data-pointsto="reviews" onclick="scrollToSection('reviews')"> 
+            <span>Recenzii</span>
           </li>
-          <li>
+          <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
             <span>Contacte</span>
           </li>
         </ul>
@@ -100,7 +98,7 @@
 
   <!-- Section 1 START -->
 
-  <div class="greeting">
+  <section id="greeting" class="greeting">
     <img src="./images/greeting.jpeg" alt="scranciob">
     <div class="wrapper">
       <span class="text">bine ai venit la</span>
@@ -110,14 +108,14 @@
       <div class="arr2"></div>
       <div class="arr3"></div>
     </div>
-  </div>
+  </section>
 
   <!-- Section 1 END -->
 
 
   <!-- Facilitati START -->
 
-  <section class="facilities">
+  <section id="facilities" class="facilities">
     <h1>Facilități</h1>
     <div class="container flex">
       <div class="sibling">
@@ -170,7 +168,7 @@
 
   <!-- Reviews START -->
 
-  <section class="reviews">
+  <section id="reviews" class="reviews">
     <img src="./images/hills.jpg" alt="hills">
     <div class="container">
       <h1 class="title">Comentarii</h1>
@@ -273,7 +271,7 @@
 
   <!-- Contacts START -->
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="container">
       <div class="wrapper flex">
         <div class="side">
@@ -399,6 +397,7 @@
 
   <script src="./scripts/header.js"></script>
   <script src="./scripts/sidenav.js"></script>
+  <script src="./scripts/menu_links.js"></script>
 
   <!-- Scripts END -->
 </body>

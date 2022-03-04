@@ -24,40 +24,14 @@ header {
       }
     }
 
-    .logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-family: 'Cookie', cursive;
-
-      // safari bug fix:
-      font-size: 3.5rem;
-      transform: translate(-50%, -50%) scale(0.7714);
-      // safari bug fix END.
-
-      color: $white-text;
-      white-space: nowrap;
-      cursor: pointer;
-      //height: 60px;
-      transition: transform 0.4s;
-
-      &.on-top-of-greeting {
-        transform: translate(-50%, calc(-50% + 30vh + 80px)) scale(1);
-        //font-size: 3.5rem;
-      }
-    }
-
     .svg-logo {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      width: Min(70vw, 800px);
-      fill: #fff;
-      
-      &.on-top-of-greeting {
-
-      }
+      width: clamp(280px, 50vw, 600px);
+      transition: transform 0.4s;
+      object-fit: cover;
+      pointer-events: none;
     }
   }
 
@@ -87,15 +61,8 @@ header {
           color: darken($white-text, 40%);
         }
 
-        a {
-          display: block;
-          height: 100%;
-          color: #fff;
-          text-decoration: none;
-        }
-
-        &.active a {
-          height: calc(100% + 4px);
+        span {
+          pointer-events: none;
         }
 
         &:not(:last-child) {

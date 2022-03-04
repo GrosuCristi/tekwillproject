@@ -85,15 +85,6 @@
     }
   }
 
-  body header .header-top-bar .logo {
-    font-size: 4.5rem;
-    transform: translate(-50%, -50%) scale(0.6);
-
-    &.on-top-of-greeting {
-      transform: translate(-50%, calc(-50% + 30vh + 130px)) scale(1);
-    }
-  }
-
   .greeting {
     height: calc(100vh - 50px) !important;
     margin-top: 50px !important;
