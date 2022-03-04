@@ -49,12 +49,15 @@ function setNavActivity(sectionTarget, navListId) {
   })
 }
 
-function scrollToSection(destId) {
-  if (destId === 'greeting')
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  else 
-    document.getElementById(destId).scrollIntoView({ behavior: 'smooth', block: 'center'})
+function scrollToSection(destId, sidemenu=false) {
+  if (sidemenu) {
+    document.getElementById('sidemenu').classList.remove('open')
+    document.querySelector('body').classList.remove('scroll-lock')
+  }
+  setTimeout(() => {
+    if (destId === 'greeting')
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    else 
+      document.getElementById(destId).scrollIntoView({ behavior: 'smooth', block: 'center'})
+  }, 250)
 }
