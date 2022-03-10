@@ -59,7 +59,7 @@ function scrollToSection(destId, sidemenu=false) {
 
   setTimeout(() => {
     let offset = document.getElementById(destId).offsetTop
-    offset = window.innerWidth >= 768 ? offset-100 : offset-60
-    window.scrollTo({ top: offset, left: 0, behavior: 'smooth' })
+    offset = window.innerWidth >= 768 ? offset-85 : offset-60
+    zenscroll.toY(offset)
   }, delay)
 }

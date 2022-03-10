@@ -1,28 +1,16 @@
 .facilities {
-  padding-top: 40px;
-
-  > h1 {
-    margin: 0;
-    text-align: center;
-  }
 
   > .flex {
     justify-content: space-between;
-    margin-top: 40px;
     flex-wrap: wrap;
     align-items: flex-start;
+    row-gap: 60px;
 
     .sibling {
       align-items: center;
-      margin-bottom: 60px;
       flex-basis: 50%;
       display: block;
       height: fit-content;
-
-      &:last-child,
-      &:nth-last-child(2) {
-        margin-bottom: 0;
-      }
 
       i {
         background-color: $primary;

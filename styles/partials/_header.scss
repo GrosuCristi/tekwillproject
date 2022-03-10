@@ -59,10 +59,13 @@ header {
       }
 
       li {
-        font-size: 1.2rem;
+        font-size: 1rem;
         cursor: pointer;
         color: $white-text;
         position: relative;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s;
 
         &:hover {
           color: darken($white-text, 40%);
@@ -70,6 +73,8 @@ header {
 
         span {
           pointer-events: none;
+          display: block;
+          transform: translateY(-25%);
         }
 
         &:not(:last-child) {

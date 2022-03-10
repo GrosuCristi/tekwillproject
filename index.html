@@ -116,14 +116,14 @@
 
   <!-- Facilitati START -->
 
-  <section id="facilities" class="facilities">
-    <h1>Facilități</h1>
+  <section id="facilities" class="facilities section-padding">
+    <h1 class="section-title">Facilități</h1>
     <div class="container flex">
       <div class="sibling">
         <i class="fas fa-campground flex"></i>
         <span class="title">Spațiu amenajat</span>
         <p class="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magni.
         </p>
       </div>
       <div class="sibling">
@@ -169,10 +169,10 @@
 
   <!-- Reviews START -->
 
-  <section id="reviews" class="reviews">
+  <section id="reviews" class="reviews section-padding">
     <img src="./images/hills.jpg" alt="hills">
     <div class="container">
-      <h1 class="title">Comentarii</h1>
+      <h1 class="section-title">Comentarii</h1>
       <div class="reviews-wrapper">
         <div class="review">
           <div class="user">
@@ -232,7 +232,7 @@
 
   <!-- Gallery START -->
 
-  <section id="gallery">
+  <section id="gallery" class="section-padding-top">
     <div class="container slider-wrapper">
       <div class="slider-row">
         <div class="image-wrapper"><img src="./images/1.jpeg"></div>
@@ -272,7 +272,7 @@
 
   <!-- Contacts START -->
 
-  <section id="contacts" class="contacts">
+  <section id="contacts" class="contacts section-padding-top">
     <div class="container">
       <div class="wrapper flex">
         <div class="side">
@@ -337,27 +337,27 @@
   <footer>
     <div class="container flex">
       <div class="sibling">
-        <span class="logo">Hanul Cu Noroc</span>
+        <img class="logo" src="./images/logo.svg" alt="logo">
       </div>
       <div class="sibling">
         <h3>Menu</h3>
         <ul class="footer-nav-list">
-          <li>
+          <li onclick="scrollToSection('greeting')">
             <i class="fas fa-home icon"></i>
             <span>Principală</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
-          <li>
+          <li onclick="scrollToSection('facilities')">
             <i class="fas fa-bed icon"></i>
             <span>Facilități</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
-          <li>
+          <li onclick="scrollToSection('reviews')">
             <i class="fas fa-user-alt icon"></i>
-            <span>Testimoniale</span>
+            <span>Recenzii</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
-          <li>
+          <li onclick="scrollToSection('contacts')">
             <i class="fas fa-address-book icon"></i>
             <span>Contacte</span>
             <i class="fas fa-arrow-right arrow"></i>
@@ -399,9 +399,7 @@
   <script src="./scripts/header.js"></script>
   <script src="./scripts/sidenav.js"></script>
   <script src="./scripts/menu_links.js"></script>
-  <script type="text/javascript">
-
-  </script>
+  <script src="./scripts/lib/zenscroll-min.js"></script>
 
   <!-- Scripts END -->
 </body>

@@ -1,8 +1,11 @@
 .reviews {
 	position: relative;
 	width: 100%;
-	margin-top: 80px;
 	overflow: hidden;
+
+	.section-title {
+		color: $white-text;
+	}
 
 	> img {
 		position: absolute;
@@ -14,13 +17,6 @@
 		transform: scale(1.15);
 		filter: brightness(0.5) blur(10px);
 		z-index: 0;
-	}
-
-	.title {
-		text-align: center;
-		color: $white-text;
-		text-align: center;
-		margin: 40px auto;
 	}
 
 	.reviews-wrapper {
@@ -84,6 +80,5 @@
 
 	.container {
 		display: block;
-		padding-bottom: 40px;
 	}
 }
