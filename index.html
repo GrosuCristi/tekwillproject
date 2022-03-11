@@ -13,11 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- Google Fonts END -->
 
-  <link rel="stylesheet" href="./styles/icons.min.css">
+  <!-- Libs START -->
+  <script src="./lib/zenscroll/zenscroll-min.js"></script>
+  
+  <script src="./lib/photoswipe/photoswipe.min.js"></script>
+  <script src="./lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  <link rel="stylesheet" href="./lib/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="./lib/photoswipe/default-skin/default-skin.css">
+
+  <link rel="stylesheet" href="./lib/fontawesome/icons.min.css">
+  <!-- Libs END -->
+
   <link rel="stylesheet" href="./styles/main.css">
-
-  <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.1.5/lib/bundle.min.js"></script>
-
   <title>Hanul cu Noroc</title>
 </head>
 <body>
@@ -232,7 +239,7 @@
 
   <!-- Gallery START -->
 
-  <section id="gallery" class="section-padding-top">
+  <!-- <section id="gallery" class="section-padding-top">
     <div class="container slider-wrapper">
       <div class="slider-row">
         <div class="image-wrapper"><img src="./images/1.jpeg"></div>
@@ -265,7 +272,7 @@
         <div class="image-wrapper"><img src="./images/6.jpeg"></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Gallery END -->
 
@@ -330,6 +337,78 @@
   </section>
 
   <!-- Contacts END -->
+
+
+  <!-- Gallery START -->
+
+  <section id="section-2">
+    <div class="grid-gallery container" itemscope>
+
+      <figure itemprop="associatedMedia" class="img-wrapper a">
+        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper c">
+        <a href="./images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
+          <img src="./images/3.jpeg" itemprop="thumbnail" alt="3">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper d">
+        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper e">
+        <a href="./images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/5.jpeg" itemprop="thumbnail" alt="5">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper b">
+        <a href="./images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img src="./images/2.jpeg" itemprop="thumbnail" alt="2">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper g">
+        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper h">
+        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper i">
+        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+
+      <!-- <div class="img-wrapper c">
+        <img src="./images/3.jpeg" alt="1">
+      </div>
+      <div class="img-wrapper d">
+        <img src="./images/4.jpeg" alt="1">
+      </div>
+      <div class="img-wrapper e">
+        <img src="./images/5.jpeg" alt="1">
+      </div>
+      <div class="img-wrapper b">
+        <img src="./images/2.jpeg" alt="1">
+      </div>
+      <div class="img-wrapper g">
+        <img src="./images/1.jpeg" alt="1">
+      </div>
+      <div class="img-wrapper h">
+        <img src="./images/4.jpeg" alt="1">
+      </div>
+      <div class="img-wrapper i">
+        <img src="./images/1.jpeg" alt="1">
+      </div>
+    </div> -->
+  </section>
+  <!-- Gallery END -->
 
 
   <!-- Footer START -->
@@ -399,8 +478,69 @@
   <script src="./scripts/header.js"></script>
   <script src="./scripts/sidenav.js"></script>
   <script src="./scripts/menu_links.js"></script>
-  <script src="./scripts/lib/zenscroll-min.js"></script>
+  <script src="./scripts/photoswipe_init.js"></script>
 
   <!-- Scripts END -->
+
+
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div> 
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
