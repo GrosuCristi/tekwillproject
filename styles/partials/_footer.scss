@@ -110,6 +110,13 @@ footer {
 
     i {
       cursor: pointer;
+      min-width: 25px;
+      transition: color 0.3s;
+      text-align: center;
+
+      &:hover {
+        color: darken($white-text, 40%);
+      }
     }
 
     i:not(:last-child) {

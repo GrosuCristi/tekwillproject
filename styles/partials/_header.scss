@@ -5,15 +5,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 8;
   height: 60px;
   transition: transform 0.4s;
-  display: block;
 
   .header-top-bar {
     height: 60px;
     position: relative;
     align-items: center;
+    justify-content: space-between;
     overflow: visible;
 
     .sidemenu-btn {
@@ -33,6 +33,42 @@ header {
       object-fit: cover;
       pointer-events: none;
       user-select: none;
+    }
+
+    .lang-wrapper {
+      position: relative;
+
+      .lang-btn {
+        color: $white-text;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: color 0.3s;
+        user-select: none;
+
+        &.open ~ .lang-dropdown {
+          visibility: visible;
+          transform: translateY(0);
+        }
+  
+        &:hover {
+          color: darken($white-text, 40%);
+        }
+        
+        i {
+          font-size: 20px;
+          display: block;
+          pointer-events: none;
+        }
+        
+        span {
+          line-height: 80%;
+          pointer-events: none;
+        }
+      }
+
+      
     }
   }
 
@@ -97,5 +133,53 @@ header {
     background-color: $primary;
     left: 0;
     right: 0;
+  }
+}
+
+.lang-dropdown-wrapper {
+  position: fixed !important;
+  overflow: visible;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.lang-dropdown {
+  //visibility: hidden;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: rgba($color: $white-text, $alpha: 0.6);
+  
+  backdrop-filter: blur(10px);
+  padding: 5px 0;
+  transform: translateY(calc(-100% - 10px)) scale(0.8);
+  transition: transform 0.4s;
+
+  &.open {
+    transform: translateY(0) scale(1);
+  }
+
+  ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 40px 0 30px;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba($color: darken($white-text, 50%), $alpha: 0.4);
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      font-size: 12px;
+      transform: translateY(-50%);
+    }
   }
 }

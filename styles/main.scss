@@ -56,7 +56,10 @@
 }
 
 @media (min-width: 768px) {
-  .sidemenu-btn { display: none; }
+  .sidemenu-btn {
+    opacity: 0;
+    pointer-events: none;
+  }
   .header-bottom-bar { display: flex !important; }
   
   header {
@@ -64,16 +67,27 @@
 
     .header-top-bar {
       height: 45px;
-    }
 
+      .lang-wrapper {
+        transform: translateY(35px);
+      }
+    }
+    
     &.shrinked {
       transform: translateY(-35px);
     }
   }
-
+  
   .greeting {
     height: calc(100vh - 50px) !important;
     margin-top: 50px !important;
+  }
+
+  .lang-dropdown-wrapper.offseted .lang-dropdown{
+    transform: translateY(calc(-100% + 25px)) scale(0.85);
+    &.open {
+      transform: translateY(35px) scale(1);
+    }
   }
 
   body .reviews .reviews-wrapper .review {

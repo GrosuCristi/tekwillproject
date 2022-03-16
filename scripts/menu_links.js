@@ -1,4 +1,4 @@
-const sectionIds = ['greeting', 'facilities', 'reviews', 'contacts']
+const sectionIds = ['greeting', 'facilities', 'reviews', 'contacts', 'gallery']
 
 const sections = []
 sectionIds.forEach(id => sections.push(document.getElementById(id)))

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <meta name="keywords" content="pensiune,duruitoarea,tabara de odihna,baza de odihna,vacanta,7 movile,turism,moldova">
-  <meta name="description" content="O pensiune situată la  marginea satului Duruitoarea Veche, pe Țâglaul (cap de stâncă) de deasupra apei, într-o zona linistita, cu miros de cimbru și adiere ușoară de vânt.">
 
   <!-- Google Fonts START -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +14,17 @@
   <!-- Google Fonts END -->
 
   <!-- Libs START -->
-  <script src="./lib/zenscroll/zenscroll-min.js"></script>
+  <script src="../lib/zenscroll/zenscroll-min.js"></script>
   
-  <script src="./lib/photoswipe/photoswipe.min.js"></script>
-  <script src="./lib/photoswipe/photoswipe-ui-default.min.js"></script>
-  <link rel="stylesheet" href="./lib/photoswipe/photoswipe.css">
-  <link rel="stylesheet" href="./lib/photoswipe/default-skin/default-skin.css">
+  <script src="../lib/photoswipe/photoswipe.min.js"></script>
+  <script src="../lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  <link rel="stylesheet" href="../lib/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="../lib/photoswipe/default-skin/default-skin.css">
 
-  <link rel="stylesheet" href="./lib/fontawesome/icons.min.css">
+  <link rel="stylesheet" href="../lib/fontawesome/icons.min.css">
   <!-- Libs END -->
 
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <title>Hanul cu Noroc</title>
 </head>
 <body>
@@ -41,11 +39,11 @@
       <div class="sidemenu-btn flex" id="open-btn">
         <i class="fas fa-bars"></i>
       </div>
-      <img class="svg-logo on-top-of-greeting" src="./images/logo.svg" alt="logo">
+      <img class="svg-logo on-top-of-greeting" src="../images/logo.svg" alt="logo">
       <div class="lang-wrapper">
         <div class="lang-btn">
           <i class="fas fa-language"></i>
-          <span>Ro</span>
+          <span>Ru</span>
         </div>
       </div>
     </div>
@@ -65,9 +63,6 @@
           <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
             <span>Contacte</span>
           </li>
-          <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
-            <span>Galerie</span>
-          </li>
         </ul>
       </nav>
     </div>
@@ -76,9 +71,9 @@
   <div class="container lang-dropdown-wrapper">
     <div class="lang-dropdown">
       <ul>
-        <li>Română<i class="fas fa-check"></i></li>
-        <a href="/ru"><li>Rusă (русский)</li></a> 
-        <a href="/en"><li>Engleză (english)</li></a> 
+        <a href="../"><li>Румынский (română)</li></a>
+        <li>Русский<i class="fas fa-check"></i></li>
+        <a href="../en"><li>Английский (english)</li></a>
       </ul>
     </div>
   </div>
@@ -120,12 +115,6 @@
             <span>Contacte</span>
           </div>
         </li>
-        <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
-          <div class="wrapper">
-            <i class="fas fa-image"></i>
-            <span>Galerie</span>
-          </div>
-        </li>
       </ul>
     </div>
   </div>
@@ -135,7 +124,7 @@
   <!-- Section 1 START -->
 
   <section id="greeting" class="greeting">
-    <img src="./images/greeting.jpeg" alt="scranciob">
+    <img src="../images/greeting.jpeg" alt="scranciob">
     <div class="wrapper">
       <span class="text">bine ai venit la</span>
     </div>
@@ -205,7 +194,7 @@
   <!-- Reviews START -->
 
   <section id="reviews" class="reviews section-padding">
-    <img src="./images/hills.jpg" alt="hills">
+    <img src="../images/hills.jpg" alt="hills">
     <div class="container">
       <h1 class="section-title">Comentarii</h1>
       <div class="reviews-wrapper">
@@ -270,34 +259,34 @@
   <!-- <section id="gallery" class="section-padding-top">
     <div class="container slider-wrapper">
       <div class="slider-row">
-        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
         
-        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
       </div>
       <div class="slider-row">
-        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
 
-        <div class="image-wrapper"><img src="./images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="./images/6.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
+        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
       </div>
     </div>
   </section> -->
@@ -369,70 +358,70 @@
 
   <!-- Gallery START -->
 
-  <section id="gallery">
+  <section id="section-2">
     <div class="grid-gallery container" itemscope>
 
       <figure itemprop="associatedMedia" class="img-wrapper a">
-        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper c">
-        <a href="./images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
-          <img src="./images/3.jpeg" itemprop="thumbnail" alt="3">
+        <a href="../images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
+          <img src="../images/3.jpeg" itemprop="thumbnail" alt="3">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper d">
-        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper e">
-        <a href="./images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/5.jpeg" itemprop="thumbnail" alt="5">
+        <a href="../images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/5.jpeg" itemprop="thumbnail" alt="5">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper b">
-        <a href="./images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
-          <img src="./images/2.jpeg" itemprop="thumbnail" alt="2">
+        <a href="../images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img src="../images/2.jpeg" itemprop="thumbnail" alt="2">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper g">
-        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper h">
-        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper i">
-        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
         </a>
       </figure>
 
       <!-- <div class="img-wrapper c">
-        <img src="./images/3.jpeg" alt="1">
+        <img src="../images/3.jpeg" alt="1">
       </div>
       <div class="img-wrapper d">
-        <img src="./images/4.jpeg" alt="1">
+        <img src="../images/4.jpeg" alt="1">
       </div>
       <div class="img-wrapper e">
-        <img src="./images/5.jpeg" alt="1">
+        <img src="../images/5.jpeg" alt="1">
       </div>
       <div class="img-wrapper b">
-        <img src="./images/2.jpeg" alt="1">
+        <img src="../images/2.jpeg" alt="1">
       </div>
       <div class="img-wrapper g">
-        <img src="./images/1.jpeg" alt="1">
+        <img src="../images/1.jpeg" alt="1">
       </div>
       <div class="img-wrapper h">
-        <img src="./images/4.jpeg" alt="1">
+        <img src="../images/4.jpeg" alt="1">
       </div>
       <div class="img-wrapper i">
-        <img src="./images/1.jpeg" alt="1">
+        <img src="../images/1.jpeg" alt="1">
       </div>
     </div> -->
   </section>
@@ -444,7 +433,7 @@
   <footer>
     <div class="container flex">
       <div class="sibling">
-        <img class="logo" src="./images/logo.svg" alt="logo">
+        <img class="logo" src="../images/logo.svg" alt="logo">
       </div>
       <div class="sibling">
         <h3>Menu</h3>
@@ -467,11 +456,6 @@
           <li onclick="scrollToSection('contacts')">
             <i class="fas fa-address-book icon"></i>
             <span>Contacte</span>
-            <i class="fas fa-arrow-right arrow"></i>
-          </li>
-          <li onclick="scrollToSection('gallery')">
-            <i class="fas fa-image icon"></i>
-            <span>Galerie</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
         </ul>
@@ -508,11 +492,11 @@
 
   <!-- Scripts START -->
 
-  <script src="./scripts/header.js"></script>
-  <script src="./scripts/sidenav.js"></script>
-  <script src="./scripts/menu_links.js"></script>
-  <script src="./scripts/lang_dropdown.js"></script>
-  <script src="./scripts/photoswipe_init.js"></script>
+  <script src="../scripts/header.js"></script>
+  <script src="../scripts/sidenav.js"></script>
+  <script src="../scripts/menu_links.js"></script>
+  <script src="../scripts/lang_dropdown.js"></script>
+  <script src="../scripts/photoswipe_init.js"></script>
 
   <!-- Scripts END -->
 
