@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="pensiune,duruitoarea,tabara de odihna,baza de odihna,vacanta,7 movile,turism,moldova">
+  <meta name="description" content="O pensiune situată la  marginea satului Duruitoarea Veche, pe Țâglaul (cap de stâncă) de deasupra apei, într-o zona linistita, cu miros de cimbru și adiere ușoară de vânt.">
 
   <!-- Google Fonts START -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,16 +54,19 @@
       <nav>
         <ul id="nav-list">
           <li data-pointsto="greeting" class="active" onclick="scrollToSection('greeting')">
-            <span>Principală</span>
+            <span>Home</span>
           </li>
           <li data-pointsto="facilities" onclick="scrollToSection('facilities')">
-            <span>Facilități</span>
+            <span>Facilities</span>
           </li>
           <li data-pointsto="reviews" onclick="scrollToSection('reviews')"> 
-            <span>Recenzii</span>
+            <span>Reviews</span>
           </li>
           <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
-            <span>Contacte</span>
+            <span>Contacts</span>
+          </li>
+          <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
+            <span>Gallery</span>
           </li>
         </ul>
       </nav>
@@ -72,7 +77,7 @@
     <div class="lang-dropdown">
       <ul>
         <a href="../"><li>Romanian (română)</li></a>
-        <a href="../ru"><li>Russian (русский)</li></a>
+        <a href="../ru"><li>Russian (русский)</li></a> 
         <li>English<i class="fas fa-check"></i></li>
       </ul>
     </div>
@@ -94,25 +99,31 @@
         <li class="flex wrapper" onclick="scrollToSection('greeting', true)">
           <div class="wrapper">
             <i class="fas fa-home"></i>
-            <span>Principală</span>
+            <span>Home</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('facilities', true)">
           <div class="wrapper">
             <i class="fas fa-bed"></i>
-            <span>Facilități</span>
+            <span>Facilities</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('reviews', true)">
           <div class="wrapper">
             <i class="fas fa-user-alt"></i>
-            <span>Recenzii</span>
+            <span>Reviews</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('contacts', true)">
           <div class="wrapper">
             <i class="fas fa-address-book"></i>
-            <span>Contacte</span>
+            <span>Contacts</span>
+          </div>
+        </li>
+        <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
+          <div class="wrapper">
+            <i class="fas fa-image"></i>
+            <span>Gallery</span>
           </div>
         </li>
       </ul>
@@ -126,7 +137,7 @@
   <section id="greeting" class="greeting">
     <img src="../images/greeting.jpeg" alt="scranciob">
     <div class="wrapper">
-      <span class="text">bine ai venit la</span>
+      <span class="text">welcome to</span>
     </div>
     <div class="arrows flex">
       <div class="arr1"></div>
@@ -141,46 +152,46 @@
   <!-- Facilitati START -->
 
   <section id="facilities" class="facilities section-padding">
-    <h1 class="section-title">Facilități</h1>
+    <h1 class="section-title">Facilities</h1>
     <div class="container flex">
       <div class="sibling">
         <i class="fas fa-campground flex"></i>
-        <span class="title">Spațiu amenajat</span>
+        <span class="title">Maintained space</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magni.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-shower flex"></i>
-        <span class="title">Apă caldă</span>
+        <span class="title">Hot water</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fab fa-gripfire flex"></i>
-        <span class="title">Loc pentru gătit</span>
+        <span class="title">Cooking space</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-user flex"></i>
-        <span class="title">4P per camera</span>
+        <span class="title">4P per room</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-child flex"></i>
-        <span class="title">Teren de joacă</span>
+        <span class="title">Playground</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-fan flex"></i>
-        <span class="title">Aer condiționat</span>
+        <span class="title">Air condition</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
@@ -196,7 +207,7 @@
   <section id="reviews" class="reviews section-padding">
     <img src="../images/hills.jpg" alt="hills">
     <div class="container">
-      <h1 class="section-title">Comentarii</h1>
+      <h1 class="section-title">Reviews</h1>
       <div class="reviews-wrapper">
         <div class="review">
           <div class="user">
@@ -209,10 +220,10 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span class="timestamp">Acum 7 luni</span>
+            <span class="timestamp">7 months ago</span>
           </div>
           <p class="description">
-            O locatie minunata, o liniste tamaduitoare,aer curat si o natura de poveste! Conditii destul de bune,si o atmosfera ca acasa! Recomanam cu incredere,mai ales ca stapinul dl Nicolae este un izvor de cunostinte!
+            A wonderful location, a healing peace, fresh air and a fairytale nature! Pretty good conditions, and a homey atmosphere! We recommend with confidence, especially that Mr. Nicolae's master is a source of knowledge!
           </p>
         </div>
         <div class="review">
@@ -226,10 +237,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span class="timestamp">Acum 6 luni</span>
+            <span class="timestamp">6 months ago</span>
           </div>
           <p class="description">
-            Frumos și liniște! E aproape de plajele de la Costești, sunt toate condițiile de care poți avea nevoie. În plus, peisajul de pe deal îți ia răsuflarea, perfect pentru a întîmpina sau petrece soarele!          </p>
+            Beautiful and quiet! It is close to the beaches of Costesti, all the conditions you may need. In addition, the scenery on the hill is breathtaking, perfect for welcoming or spending the sun!
+          </p>
         </div>
         <div class="review">
           <div class="user">
@@ -242,56 +254,17 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span class="timestamp">Acum un an</span>
+            <span class="timestamp">One year ago</span>
           </div>
           <p class="description">
-            Totul a fost perfect, localizarea este ideala, acces facil, peisaje de vis. Curățenia exemplară, posibilitatea de a face mâncare în aer liber, gazdele foarte amabile și atente la micile detalii au făcut ca odihna să fie memorabilă.          </p>
+            Everything was perfect, the location is ideal, easy access, dreamy landscapes. Exemplary cleanliness, the ability to cook outdoors, the hosts very kind and attentive to small details made the rest memorable.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Reviews END -->
-
-
-  <!-- Gallery START -->
-
-  <!-- <section id="gallery" class="section-padding-top">
-    <div class="container slider-wrapper">
-      <div class="slider-row">
-        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
-        
-        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
-      </div>
-      <div class="slider-row">
-        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
-
-        <div class="image-wrapper"><img src="../images/1.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/2.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/3.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/4.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/5.jpeg"></div>
-        <div class="image-wrapper"><img src="../images/6.jpeg"></div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Gallery END -->
 
 
   <!-- Contacts START -->
@@ -301,16 +274,16 @@
       <div class="wrapper flex">
         <div class="side">
           <div class="introduction">
-            <h2 class="contact-us-title">Contactează-ne</h2>
+            <h2 class="contact-us-title">Contact Us</h2>
             <p class="subtext">
-              Mereu pe fir pentru a-ți răspunde. Nu ezita să ne contactezi dacă ai neclarități
+              Always online to respond to you. Don't hesitate do contact us if you have questions
             </p>
           </div>
           <table class="contact-data">
             <tr>
               <td class="icon"><i class="fas fa-phone"></i></td>
               <td>
-                <span class="title">Telefon</span>
+                <span class="title">Phone</span>
                 <p class="subtext">
                   079 848 077
                 </p>
@@ -328,7 +301,7 @@
             <tr>
               <td class="icon"><i class="fas fa-map-marker-alt"></i></td>
               <td>
-                <span class="title">Adresa</span>
+                <span class="title">Adress</span>
                 <p class="subtext">
                   Duruitoarea Veche, Moldova
                 </p>
@@ -337,10 +310,10 @@
             <tr>
               <td class="icon"><i class="fas fa-calendar"></i></td>
               <td>
-                <span class="title">Orar</span>
+                <span class="title">Schedule</span>
                 <p class="subtext">
-                  Lun-Dum - deschis 24 ore<br>
-                  Sâm - închis
+                  Mon-Sun - open 24 hours<br>
+                  Sat - closed
                 </p>
               </td>
             </tr>
@@ -358,9 +331,8 @@
 
   <!-- Gallery START -->
 
-  <section id="section-2">
+  <section id="gallery" class="section-padding">
     <div class="grid-gallery container" itemscope>
-
       <figure itemprop="associatedMedia" class="img-wrapper a">
         <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
           <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
@@ -386,11 +358,6 @@
           <img src="../images/2.jpeg" itemprop="thumbnail" alt="2">
         </a>
       </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper g">
-        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
-        </a>
-      </figure>
       <figure itemprop="associatedMedia" class="img-wrapper h">
         <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
           <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
@@ -401,29 +368,7 @@
           <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
         </a>
       </figure>
-
-      <!-- <div class="img-wrapper c">
-        <img src="../images/3.jpeg" alt="1">
-      </div>
-      <div class="img-wrapper d">
-        <img src="../images/4.jpeg" alt="1">
-      </div>
-      <div class="img-wrapper e">
-        <img src="../images/5.jpeg" alt="1">
-      </div>
-      <div class="img-wrapper b">
-        <img src="../images/2.jpeg" alt="1">
-      </div>
-      <div class="img-wrapper g">
-        <img src="../images/1.jpeg" alt="1">
-      </div>
-      <div class="img-wrapper h">
-        <img src="../images/4.jpeg" alt="1">
-      </div>
-      <div class="img-wrapper i">
-        <img src="../images/1.jpeg" alt="1">
-      </div>
-    </div> -->
+    </div>
   </section>
   <!-- Gallery END -->
 
@@ -440,28 +385,33 @@
         <ul class="footer-nav-list">
           <li onclick="scrollToSection('greeting')">
             <i class="fas fa-home icon"></i>
-            <span>Principală</span>
+            <span>Home</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('facilities')">
             <i class="fas fa-bed icon"></i>
-            <span>Facilități</span>
+            <span>Facilities</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('reviews')">
             <i class="fas fa-user-alt icon"></i>
-            <span>Recenzii</span>
+            <span>Reviews</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('contacts')">
             <i class="fas fa-address-book icon"></i>
-            <span>Contacte</span>
+            <span>Contacts</span>
+            <i class="fas fa-arrow-right arrow"></i>
+          </li>
+          <li onclick="scrollToSection('gallery')">
+            <i class="fas fa-image icon"></i>
+            <span>Gallery</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
         </ul>
       </div>
       <div class="sibling">
-        <h3>Aboneazăte la newsletter</h3>
+        <h3>Subscribe to our newsletter</h3>
         <form action="#">
           <input class="input-text" placeholder="Email" type="email" name="email">
           <button type="submit" class="flex">
@@ -471,19 +421,19 @@
         </form>
       </div>
       <div class="sibling">
-        <h3>Rețele de socializare</h3>
+        <h3>Social networks</h3>
         <div class="flex social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
+          <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fja-jp.facebook.com%2Fredescoperamoldova%2Fposts%2F3066626060116881%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/hanul_cu_noroc/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
     
     <div class="container disclaimer">
       <p>
-        Acest website a fost realizat în cadrul 
-        competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare 
-        Școală” și nu reflectă neapărat opinia proiectului.
+        This website was created within
+        "Tekwill Junior Ambassadors" competition organized by "Tekwill în Fiecare 
+        Școală" and does not necessarily reflect the opinion of the project.
       </p>
     </div>
   </footer>
