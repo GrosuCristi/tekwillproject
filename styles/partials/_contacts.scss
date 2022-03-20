@@ -7,13 +7,13 @@
     
     .contact-us-title {
       margin: 0;
+      font-size: clamp(1.7rem, 7vw, 2.7rem);
     }
     
     .side {
       background-color: #000;
       color: $white-text;
-      padding: 20px;
-      padding-bottom: 30px;
+      padding: 40px 30px;
       width: 100%;
       display: flex;
       flex-direction: column;
