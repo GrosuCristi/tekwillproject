@@ -59,14 +59,14 @@
           <li data-pointsto="facilities" onclick="scrollToSection('facilities')">
             <span>Facilități</span>
           </li>
+          <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
+            <span>Galerie</span>
+          </li>
           <li data-pointsto="reviews" onclick="scrollToSection('reviews')"> 
             <span>Recenzii</span>
           </li>
           <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
             <span>Contacte</span>
-          </li>
-          <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
-            <span>Galerie</span>
           </li>
         </ul>
       </nav>
@@ -108,6 +108,12 @@
             <span>Facilități</span>
           </div>
         </li>
+        <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
+          <div class="wrapper">
+            <i class="fas fa-image"></i>
+            <span>Galerie</span>
+          </div>
+        </li>
         <li class="flex wrapper" onclick="scrollToSection('reviews', true)">
           <div class="wrapper">
             <i class="fas fa-user-alt"></i>
@@ -118,12 +124,6 @@
           <div class="wrapper">
             <i class="fas fa-address-book"></i>
             <span>Contacte</span>
-          </div>
-        </li>
-        <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
-          <div class="wrapper">
-            <i class="fas fa-image"></i>
-            <span>Galerie</span>
           </div>
         </li>
       </ul>
@@ -151,7 +151,7 @@
 
   <!-- Facilitati START -->
 
-  <section id="facilities" class="facilities section-padding">
+  <section id="facilities" class="facilities section-padding reveal">
     <h1 class="section-title">Facilități</h1>
     <div class="container flex">
       <div class="sibling">
@@ -202,9 +202,54 @@
   <!-- Facilitati END -->
 
 
+  <!-- Gallery START -->
+
+  <section id="gallery" class="section-padding-bottom reveal">
+    <h1 class="section-title">Galerie</h1>
+    <div class="grid-gallery container" itemscope>
+      <figure itemprop="associatedMedia" class="img-wrapper a">
+        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper c">
+        <a href="./images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
+          <img src="./images/3.jpeg" itemprop="thumbnail" alt="3">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper d">
+        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper e">
+        <a href="./images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/5.jpeg" itemprop="thumbnail" alt="5">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper b">
+        <a href="./images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img src="./images/2.jpeg" itemprop="thumbnail" alt="2">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper h">
+        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper i">
+        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+    </div>
+  </section>
+  <!-- Gallery END -->
+
+
   <!-- Reviews START -->
 
-  <section id="reviews" class="reviews section-padding">
+  <section id="reviews" class="reviews section-padding reveal">
     <img src="./images/hills.jpg" alt="hills">
     <div class="container">
       <h1 class="section-title">Recenzii</h1>
@@ -267,7 +312,7 @@
 
   <!-- Contacts START -->
 
-  <section id="contacts" class="contacts section-padding-top">
+  <section id="contacts" class="contacts section-padding reveal">
     <div class="container">
       <div class="wrapper flex">
         <div class="side">
@@ -327,48 +372,7 @@
   <!-- Contacts END -->
 
 
-  <!-- Gallery START -->
-
-  <section id="gallery" class="section-padding">
-    <div class="grid-gallery container" itemscope>
-      <figure itemprop="associatedMedia" class="img-wrapper a">
-        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper c">
-        <a href="./images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
-          <img src="./images/3.jpeg" itemprop="thumbnail" alt="3">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper d">
-        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper e">
-        <a href="./images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/5.jpeg" itemprop="thumbnail" alt="5">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper b">
-        <a href="./images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
-          <img src="./images/2.jpeg" itemprop="thumbnail" alt="2">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper h">
-        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper i">
-        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
-        </a>
-      </figure>
-    </div>
-  </section>
-  <!-- Gallery END -->
+ 
 
 
   <!-- Footer START -->
@@ -391,6 +395,11 @@
             <span>Facilități</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
+          <li onclick="scrollToSection('gallery')">
+            <i class="fas fa-image icon"></i>
+            <span>Galerie</span>
+            <i class="fas fa-arrow-right arrow"></i>
+          </li>
           <li onclick="scrollToSection('reviews')">
             <i class="fas fa-user-alt icon"></i>
             <span>Recenzii</span>
@@ -399,11 +408,6 @@
           <li onclick="scrollToSection('contacts')">
             <i class="fas fa-address-book icon"></i>
             <span>Contacte</span>
-            <i class="fas fa-arrow-right arrow"></i>
-          </li>
-          <li onclick="scrollToSection('gallery')">
-            <i class="fas fa-image icon"></i>
-            <span>Galerie</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
         </ul>
@@ -444,6 +448,7 @@
   <script src="./scripts/sidenav.js"></script>
   <script src="./scripts/menu_links.js"></script>
   <script src="./scripts/lang_dropdown.js"></script>
+  <script src="./scripts/content_reveal.js"></script>
   <script src="./scripts/photoswipe_init.js"></script>
 
   <!-- Scripts END -->

@@ -59,14 +59,14 @@
           <li data-pointsto="facilities" onclick="scrollToSection('facilities')">
             <span>Удобства</span>
           </li>
+          <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
+            <span>Галерея</span>
+          </li>
           <li data-pointsto="reviews" onclick="scrollToSection('reviews')"> 
             <span>Отзывы</span>
           </li>
           <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
             <span>Контакты</span>
-          </li>
-          <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
-            <span>Галерея</span>
           </li>
         </ul>
       </nav>
@@ -108,6 +108,12 @@
             <span>Удобства</span>
           </div>
         </li>
+        <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
+          <div class="wrapper">
+            <i class="fas fa-image"></i>
+            <span>Галерея</span>
+          </div>
+        </li>
         <li class="flex wrapper" onclick="scrollToSection('reviews', true)">
           <div class="wrapper">
             <i class="fas fa-user-alt"></i>
@@ -118,12 +124,6 @@
           <div class="wrapper">
             <i class="fas fa-address-book"></i>
             <span>Контакты</span>
-          </div>
-        </li>
-        <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
-          <div class="wrapper">
-            <i class="fas fa-image"></i>
-            <span>Галерея</span>
           </div>
         </li>
       </ul>
@@ -151,47 +151,47 @@
 
   <!-- Facilitati START -->
 
-  <section id="facilities" class="facilities section-padding">
+  <section id="facilities" class="facilities section-padding reveal">
     <h1 class="section-title">Удобства</h1>
     <div class="container flex">
       <div class="sibling">
         <i class="fas fa-campground flex"></i>
-        <span class="title">Spațiu amenajat</span>
+        <span class="title">Организованное место</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magni.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-shower flex"></i>
-        <span class="title">Apă caldă</span>
+        <span class="title">Горячая вода</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fab fa-gripfire flex"></i>
-        <span class="title">Loc pentru gătit</span>
+        <span class="title">Кухня</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-user flex"></i>
-        <span class="title">4P per camera</span>
+        <span class="title">4Ч за номер</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-child flex"></i>
-        <span class="title">Teren de joacă</span>
+        <span class="title">Игровая площадка</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-fan flex"></i>
-        <span class="title">Aer condiționat</span>
+        <span class="title">Кондиционер</span>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, commodi!
         </p>
@@ -202,9 +202,54 @@
   <!-- Facilitati END -->
 
 
+  <!-- Gallery START -->
+
+  <section id="gallery" class="section-padding-bottom reveal">
+    <h1 class="section-title">Галерея</h1>
+    <div class="grid-gallery container" itemscope>
+      <figure itemprop="associatedMedia" class="img-wrapper a">
+        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper c">
+        <a href="../images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
+          <img src="../images/3.jpeg" itemprop="thumbnail" alt="3">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper d">
+        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper e">
+        <a href="../images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/5.jpeg" itemprop="thumbnail" alt="5">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper b">
+        <a href="../images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img src="../images/2.jpeg" itemprop="thumbnail" alt="2">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper h">
+        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
+        </a>
+      </figure>
+      <figure itemprop="associatedMedia" class="img-wrapper i">
+        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
+        </a>
+      </figure>
+    </div>
+  </section>
+  <!-- Gallery END -->
+
+
   <!-- Reviews START -->
 
-  <section id="reviews" class="reviews section-padding">
+  <section id="reviews" class="reviews section-padding reveal">
     <img src="../images/hills.jpg" alt="hills">
     <div class="container">
       <h1 class="section-title">Отзывы</h1>
@@ -269,7 +314,7 @@
   
   <!-- Contacts START -->
 
-  <section id="contacts" class="contacts section-padding-top">
+  <section id="contacts" class="contacts section-padding reveal">
     <div class="container">
       <div class="wrapper flex">
         <div class="side">
@@ -329,50 +374,6 @@
   <!-- Contacts END -->
 
 
-  <!-- Gallery START -->
-
-  <section id="gallery" class="section-padding">
-    <div class="grid-gallery container" itemscope>
-      <figure itemprop="associatedMedia" class="img-wrapper a">
-        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper c">
-        <a href="../images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
-          <img src="../images/3.jpeg" itemprop="thumbnail" alt="3">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper d">
-        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper e">
-        <a href="../images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="../images/5.jpeg" itemprop="thumbnail" alt="5">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper b">
-        <a href="../images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
-          <img src="../images/2.jpeg" itemprop="thumbnail" alt="2">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper h">
-        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
-        </a>
-      </figure>
-      <figure itemprop="associatedMedia" class="img-wrapper i">
-        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
-        </a>
-      </figure>
-    </div>
-  </section>
-  <!-- Gallery END -->
-
-
   <!-- Footer START -->
 
   <footer>
@@ -381,47 +382,47 @@
         <img class="logo" src="../images/logo.svg" alt="logo">
       </div>
       <div class="sibling">
-        <h3>Menu</h3>
+        <h3>Меню</h3>
         <ul class="footer-nav-list">
           <li onclick="scrollToSection('greeting')">
             <i class="fas fa-home icon"></i>
-            <span>Principală</span>
+            <span>Главная</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('facilities')">
             <i class="fas fa-bed icon"></i>
-            <span>Facilități</span>
-            <i class="fas fa-arrow-right arrow"></i>
-          </li>
-          <li onclick="scrollToSection('reviews')">
-            <i class="fas fa-user-alt icon"></i>
-            <span>Recenzii</span>
-            <i class="fas fa-arrow-right arrow"></i>
-          </li>
-          <li onclick="scrollToSection('contacts')">
-            <i class="fas fa-address-book icon"></i>
-            <span>Contacte</span>
+            <span>Удобства</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('gallery')">
             <i class="fas fa-image icon"></i>
-            <span>Galerie</span>
+            <span>Галерея</span>
+            <i class="fas fa-arrow-right arrow"></i>
+          </li>
+          <li onclick="scrollToSection('reviews')">
+            <i class="fas fa-user-alt icon"></i>
+            <span>Отзывы</span>
+            <i class="fas fa-arrow-right arrow"></i>
+          </li>
+          <li onclick="scrollToSection('contacts')">
+            <i class="fas fa-address-book icon"></i>
+            <span>Контакты</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
         </ul>
       </div>
       <div class="sibling">
-        <h3>Aboneazăte la newsletter</h3>
+        <h3>Подписаться на новости</h3>
         <form action="#">
           <input class="input-text" placeholder="Email" type="email" name="email">
           <button type="submit" class="flex">
             <i class="far fa-envelope"></i>
-            <span>aplică</span>
+            <span>Подписаться</span>
           </button>
         </form>
       </div>
       <div class="sibling">
-        <h3>Rețele de socializare</h3>
+        <h3>Социальные сети</h3>
         <div class="flex social">
           <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fja-jp.facebook.com%2Fredescoperamoldova%2Fposts%2F3066626060116881%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/hanul_cu_noroc/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -431,9 +432,7 @@
     
     <div class="container disclaimer">
       <p>
-        Acest website a fost realizat în cadrul 
-        competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare 
-        Școală” și nu reflectă neapărat opinia proiectului.
+        Этот веб-сайт был создан в рамках конкурса «Tekwill Junior Ambassadors», организованного проектом «Tekwill в каждой школе», и не обязательно отражает мнение проекта.
       </p>
     </div>
   </footer>
@@ -446,6 +445,7 @@
   <script src="../scripts/sidenav.js"></script>
   <script src="../scripts/menu_links.js"></script>
   <script src="../scripts/lang_dropdown.js"></script>
+  <script src="../scripts/content_reveal.js"></script>
   <script src="../scripts/photoswipe_init.js"></script>
 
   <!-- Scripts END -->

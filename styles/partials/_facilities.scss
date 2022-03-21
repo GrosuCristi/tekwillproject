@@ -11,7 +11,8 @@
       flex-basis: 50%;
       display: block;
       height: fit-content;
-
+      opacity: 0;
+      
       i {
         background-color: $primary;
         width: 100%;
@@ -41,5 +42,26 @@
         margin-right: auto;
       }
     }
+  }
+
+  &.reveal-active > .flex {
+    @for $i from 1 through 6 {
+      .sibling:nth-child(#{$i}) {
+        animation: reveal-facilities 0.5s forwards;
+        animation-delay: calc(1s * (#{$i - 1} * 0.2));
+      }
+    }
+  }
+}
+
+@keyframes reveal-facilities {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
