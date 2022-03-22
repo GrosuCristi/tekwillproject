@@ -61,6 +61,14 @@
     "e h d";
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(3, clamp(160px, 27.5vw, 210px));
+
+    .a { grid-area: a; }
+    .b { grid-area: b; }
+    .c { grid-area: c; }
+    .d { grid-area: d; }
+    .e { grid-area: e; }
+    .h { grid-area: h; }
+    .i { grid-area: i; }
   }
 }
 
@@ -112,7 +120,15 @@
     "c a d h"
     "c b e i";
     grid-template-columns: repeat(4, 4fr);
-    grid-template-rows: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 240px);
+
+    .a { grid-area: a; }
+    .b { grid-area: b; }
+    .c { grid-area: c; }
+    .d { grid-area: d; }
+    .e { grid-area: e; }
+    .h { grid-area: h; }
+    .i { grid-area: i; }
   }
 
   body .contacts .wrapper {

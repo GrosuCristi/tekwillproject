@@ -24,7 +24,7 @@
 		height: 100%;
 		object-fit: cover;
 		transform: scale(1.15);
-		filter: brightness(0.5) blur(10px);
+		filter: brightness(0.5) saturate(160%) blur(10px);
 		z-index: 0;
 	}
 

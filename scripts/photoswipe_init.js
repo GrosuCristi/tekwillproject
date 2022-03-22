@@ -1,5 +1,5 @@
 // !!!
-// Acest script este propus de libraria 'photoswipe.js'
+// This script is suggested by 'photoswipe.js' library in documentation
 // !!!
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
