@@ -1,8 +1,20 @@
 .reviews {
+	&.reveal-active .reviews-wrapper {
+		@for $i from 1 through 3 {
+			.review:nth-child(#{$i}) {
+				animation: reveal-reviews 0.5s forwards;
+        animation-delay: calc(2s * (#{$i - 1} * 0.2));
+			}
+		}
+	}
+
 	position: relative;
 	width: 100%;
-	margin-top: 80px;
 	overflow: hidden;
+
+	.section-title {
+		color: $white-text;
+	}
 
 	> img {
 		position: absolute;
@@ -12,15 +24,8 @@
 		height: 100%;
 		object-fit: cover;
 		transform: scale(1.15);
-		filter: brightness(0.5) blur(10px);
+		filter: brightness(0.5) saturate(160%) blur(10px);
 		z-index: 0;
-	}
-
-	.title {
-		text-align: center;
-		color: $white-text;
-		text-align: center;
-		margin: 40px auto;
 	}
 
 	.reviews-wrapper {
@@ -34,6 +39,7 @@
 		.review {
 			flex-basis: 100%;
 			max-width: 500px;
+			opacity: 0;
 			//border: 1px solid red;
 			
 			.user {
@@ -84,6 +90,17 @@
 
 	.container {
 		display: block;
-		padding-bottom: 40px;
 	}
+}
+
+@keyframes reveal-reviews {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

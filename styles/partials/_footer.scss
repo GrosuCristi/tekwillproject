@@ -24,9 +24,10 @@ footer {
   }
 
   .logo {
-    font-family: 'Cookie', cursive;
-    font-size: 2.7em;
-    color: $white-text;
+    width: 210px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
   }
 
   form {
@@ -103,15 +104,26 @@ footer {
   }
 
   .social {
-    color: $white-text;
     justify-content: flex-start;
     font-size: 1.7rem;
+    a {
+      color: $white-text;
+      display: block;
+      min-width: 25px;
+    }
 
     i {
       cursor: pointer;
+      min-width: 25px;
+      transition: color 0.3s;
+      text-align: center;
+
+      &:hover {
+        color: darken($white-text, 40%);
+      }
     }
 
-    i:not(:last-child) {
+    a:not(:last-child) {
       margin-right: 20px;
     }
   }
@@ -120,5 +132,8 @@ footer {
     color: $disclaimer-color;
     font-size: 0.8rem;
     margin-top: 40px;
+    text-align: center;
+    max-width: 1000px;
+    font-family: 'Noto Sans', sans-serif;
   }
 }

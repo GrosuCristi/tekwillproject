@@ -14,6 +14,10 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: $bg-color;
   font-family: 'Noto Serif', serif;
@@ -22,11 +26,6 @@ body {
   &.scroll-lock {
     overflow: hidden;
   }
-}
-
-::selection {
-  background-color: blueviolet;
-  color: black;
 }
 
 .container {
@@ -83,4 +82,25 @@ body {
     //80% { opacity: 0.1; }
     100% { opacity: 0; }
   }
+}
+
+.section-title {
+  font-size: clamp(1.7rem, 7vw, 2.7rem);
+  padding-bottom: clamp(2.5rem, 9vw, 5rem);
+  margin: 0;
+  text-align: center;
+  line-height: 80%;
+}
+
+.section-padding {
+  padding-top: calc(clamp(2.5rem, 9vw, 5rem) + clamp(1.7rem, 7vw, 2.7rem));
+  padding-bottom: calc(clamp(2.5rem, 9vw, 5rem) + clamp(1.7rem, 7vw, 2.7rem));
+}
+
+.section-padding-top {
+  padding-top: calc(clamp(2.5rem, 9vw, 5rem) + clamp(1.7rem, 7vw, 2.7rem));
+}
+
+.section-padding-bottom {
+  padding-bottom: calc(clamp(2.5rem, 9vw, 5rem) + clamp(1.7rem, 7vw, 2.7rem));
 }

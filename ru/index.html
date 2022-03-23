@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="keywords" content="pensiune,duruitoarea,tabara de odihna,baza de odihna,vacanta,7 movile,turism,moldova">
-  <meta name="description" content="O pensiune situată la  marginea satului Duruitoarea Veche, pe Țâglaul (cap de stâncă) de deasupra apei, într-o zona linistita, cu miros de cimbru și adiere ușoară de vânt.">
+  <meta name="description" content="Гостевой дом, расположенный на окраине деревни Дуруитоареа Веке, на Цаглауле (скале) над водой, в тихом районе, с запахом тимьяна и легким бризом.">
 
   <!-- Google Fonts START -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,18 @@
   <!-- Google Fonts END -->
 
   <!-- Libs START -->
-  <script src="./lib/zenscroll/zenscroll-min.js"></script>
+  <script src="../lib/zenscroll/zenscroll-min.js"></script>
   
-  <script src="./lib/photoswipe/photoswipe.min.js"></script>
-  <script src="./lib/photoswipe/photoswipe-ui-default.min.js"></script>
-  <link rel="stylesheet" href="./lib/photoswipe/photoswipe.css">
-  <link rel="stylesheet" href="./lib/photoswipe/default-skin/default-skin.css">
+  <script src="../lib/photoswipe/photoswipe.min.js"></script>
+  <script src="../lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  <link rel="stylesheet" href="../lib/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="../lib/photoswipe/default-skin/default-skin.css">
 
-  <link rel="stylesheet" href="./lib/fontawesome/icons.min.css">
+  <link rel="stylesheet" href="../lib/fontawesome/icons.min.css">
   <!-- Libs END -->
 
-  <link rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../styles/main.css">
   <title>Hanul cu Noroc</title>
 </head>
 <body>
@@ -42,11 +42,11 @@
       <div class="sidemenu-btn flex" id="open-btn">
         <i class="fas fa-bars"></i>
       </div>
-      <img class="svg-logo on-top-of-greeting" src="./images/logo.svg" alt="logo">
+      <img class="svg-logo on-top-of-greeting" src="../images/logo.svg" alt="logo">
       <div class="lang-wrapper">
         <div class="lang-btn">
           <i class="fas fa-language"></i>
-          <span>Ro</span>
+          <span>Ру</span>
         </div>
       </div>
     </div>
@@ -55,19 +55,19 @@
       <nav>
         <ul id="nav-list">
           <li data-pointsto="greeting" class="active" onclick="scrollToSection('greeting')">
-            <span>Principală</span>
+            <span>Главная</span>
           </li>
           <li data-pointsto="facilities" onclick="scrollToSection('facilities')">
-            <span>Facilități</span>
+            <span>Удобства</span>
           </li>
           <li data-pointsto="gallery" onclick="scrollToSection('gallery')">
-            <span>Galerie</span>
+            <span>Галерея</span>
           </li>
           <li data-pointsto="reviews" onclick="scrollToSection('reviews')"> 
-            <span>Recenzii</span>
+            <span>Отзывы</span>
           </li>
           <li data-pointsto="contacts" onclick="scrollToSection('contacts')">
-            <span>Contacte</span>
+            <span>Контакты</span>
           </li>
         </ul>
       </nav>
@@ -77,9 +77,9 @@
   <div class="container lang-dropdown-wrapper">
     <div class="lang-dropdown">
       <ul>
-        <li>Română<i class="fas fa-check"></i></li>
-        <a href="/ru"><li>Русский (rusă)</li></a> 
-        <a href="/en"><li>English (engleză)</li></a> 
+        <a href="../"><li>Română (румынский)</li></a>
+        <li>Русский<i class="fas fa-check"></i></li>
+        <a href="../en"><li>English (английский)</li></a> 
       </ul>
     </div>
   </div>
@@ -100,31 +100,31 @@
         <li class="flex wrapper" onclick="scrollToSection('greeting', true)">
           <div class="wrapper">
             <i class="fas fa-home"></i>
-            <span>Principală</span>
+            <span>Главная</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('facilities', true)">
           <div class="wrapper">
             <i class="fas fa-bed"></i>
-            <span>Facilități</span>
+            <span>Удобства</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('gallery', true)">
           <div class="wrapper">
             <i class="fas fa-image"></i>
-            <span>Galerie</span>
+            <span>Галерея</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('reviews', true)">
           <div class="wrapper">
             <i class="fas fa-user-alt"></i>
-            <span>Recenzii</span>
+            <span>Отзывы</span>
           </div>
         </li>
         <li class="flex wrapper" onclick="scrollToSection('contacts', true)">
           <div class="wrapper">
             <i class="fas fa-address-book"></i>
-            <span>Contacte</span>
+            <span>Контакты</span>
           </div>
         </li>
       </ul>
@@ -136,9 +136,9 @@
   <!-- Section 1 START -->
 
   <section id="greeting" class="greeting">
-    <img src="./images/greeting.jpeg" alt="scranciob">
+    <img src="../images/greeting.jpeg" alt="scranciob">
     <div class="wrapper">
-      <span class="text">bine ai venit la</span>
+      <span class="text">добро пожаловать в</span>
     </div>
     <div class="arrows flex">
       <div class="arr1"></div>
@@ -153,48 +153,48 @@
   <!-- Facilitati START -->
 
   <section id="facilities" class="facilities section-padding reveal">
-    <h1 class="section-title">Facilități</h1>
+    <h1 class="section-title">Удобства</h1>
     <div class="container flex">
       <div class="sibling">
         <i class="fas fa-campground flex"></i>
-        <span class="title">Spațiu amenajat</span>
+        <span class="title">Организованное место</span>
         <p class="para">
-          Teritoriul pensiunii este îngrijit și pregătit pentru activități familiale.
+          Территория гостевова дома ухожена и подготовлена ​​для семейной деятельности.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-child flex"></i>
-        <span class="title">Teren de joacă</span>
+        <span class="title">Игровая площадка</span>
         <p class="para">
-          În curtea casei se află un teren de joacă pentru copii.
+          Во дворе дома есть детская площадка для отдыха.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-shower flex"></i>
-        <span class="title">Apă caldă</span>
+        <span class="title">Горячая вода</span>
         <p class="para">
-          În fiecare căsuță se poate găsi o sursă de apă caldă.
+          В каждом коттедже есть источник горячей воды.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-utensils flex"></i>
-        <span class="title">Loc pentru gătit</span>
+        <span class="title">Кухня</span>
         <p class="para">
-          Fiecare căsuță este dotată cu o bucătărie și grătare în ograda pensiunii.
+          Каждый коттедж оборудован кухней и принадлежностями для барбекю в гостевом доме.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-home flex"></i>
-        <span class="title">4P per cameră</span>
+        <span class="title">4Ч за номер</span>
         <p class="para">
-          Camere compacte și bine amenajate pentru a oferi comfort a 4 persoane.
+          Компактные и хорошо оборудованные номера для комфортного проживания 4 человек.
         </p>
       </div>
       <div class="sibling">
         <i class="fas fa-wind flex"></i>
-        <span class="title">Aer condiționat</span>
+        <span class="title">Кондиционер</span>
         <p class="para">
-          Camerele sunt dotate cu aer condiționat pentru a oferi maxim comfort.
+          Номера оборудованы кондиционерами для максимального комфорта.
         </p>
       </div>
     </div>
@@ -206,41 +206,41 @@
   <!-- Gallery START -->
 
   <section id="gallery" class="section-padding-bottom reveal">
-    <h1 class="section-title">Galerie</h1>
+    <h1 class="section-title">Галерея</h1>
     <div class="grid-gallery container" itemscope>
       <figure itemprop="associatedMedia" class="img-wrapper a">
-        <a href="./images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/1.jpeg" itemprop="thumbnail" alt="1">
+        <a href="../images/1.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/1.jpeg" itemprop="thumbnail" alt="1">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper c">
-        <a href="./images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
-          <img src="./images/3.jpeg" itemprop="thumbnail" alt="3">
+        <a href="../images/3.jpeg" itemprop="contentUrl" data-size="1152x1536">
+          <img src="../images/3.jpeg" itemprop="thumbnail" alt="3">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper d">
-        <a href="./images/7.jpeg" itemprop="contentUrl" data-size="451x677">
-          <img src="./images/7.jpeg" itemprop="thumbnail" alt="7">
+        <a href="../images/7.jpeg" itemprop="contentUrl" data-size="451x677">
+          <img src="../images/7.jpeg" itemprop="thumbnail" alt="7">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper e">
-        <a href="./images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/5.jpeg" itemprop="thumbnail" alt="5">
+        <a href="../images/5.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/5.jpeg" itemprop="thumbnail" alt="5">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper b">
-        <a href="./images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
-          <img src="./images/2.jpeg" itemprop="thumbnail" alt="2">
+        <a href="../images/2.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img src="../images/2.jpeg" itemprop="thumbnail" alt="2">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper h">
-        <a href="./images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
-          <img src="./images/4.jpeg" itemprop="thumbnail" alt="4">
+        <a href="../images/4.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="../images/4.jpeg" itemprop="thumbnail" alt="4">
         </a>
       </figure>
       <figure itemprop="associatedMedia" class="img-wrapper i">
-        <a href="./images/6.jpeg" itemprop="contentUrl" data-size="768x1024">
-          <img src="./images/6.jpeg" itemprop="thumbnail" alt="6">
+        <a href="../images/6.jpeg" itemprop="contentUrl" data-size="768x1024">
+          <img src="../images/6.jpeg" itemprop="thumbnail" alt="6">
         </a>
       </figure>
     </div>
@@ -251,9 +251,9 @@
   <!-- Reviews START -->
 
   <section id="reviews" class="reviews section-padding reveal">
-    <img src="./images/hills.jpg" alt="hills">
+    <img src="../images/hills.jpg" alt="hills">
     <div class="container">
-      <h1 class="section-title">Recenzii</h1>
+      <h1 class="section-title">Отзывы</h1>
       <div class="reviews-wrapper">
         <div class="review">
           <div class="user">
@@ -266,10 +266,10 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span class="timestamp">Acum 7 luni</span>
+            <span class="timestamp">7 месяцев назад</span>
           </div>
           <p class="description">
-            O locatie minunata, o liniste tamaduitoare,aer curat si o natura de poveste! Conditii destul de bune,si o atmosfera ca acasa! Recomanam cu incredere,mai ales ca stapinul dl Nicolae este un izvor de cunostinte!
+            Чудесное место, целебный покой, свежий воздух и сказочная природа! Довольно хорошие условия и домашняя атмосфера! Мы рекомендуем с уверенностью, тем более что мастер г-на Николае является источником знаний!
           </p>
         </div>
         <div class="review">
@@ -283,11 +283,12 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span class="timestamp">Acum 6 luni</span>
+            <span class="timestamp">6 месяцев назад</span>
           </div>
           <p class="description">
-            Frumos și liniște! E aproape de plajele de la Costești, sunt toate condițiile de care poți avea nevoie. În plus, peisajul de pe deal îți ia răsuflarea, perfect pentru a întîmpina sau petrece soarele!          </p>
-        </div>
+            Красиво и тихо! Он находится недалеко от пляжей Костешть, со всеми условиями, которые могут вам понадобиться. Кроме того, пейзажи на холме захватывают дух, идеально подходят для приветствия или отдыха на солнце!
+          </p>
+         </div>
         <div class="review">
           <div class="user">
             <i class="fas fa-user-circle"></i>
@@ -299,10 +300,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span class="timestamp">Acum un an</span>
+            <span class="timestamp">Один год назад</span>
           </div>
           <p class="description">
-            Totul a fost perfect, localizarea este ideala, acces facil, peisaje de vis. Curățenia exemplară, posibilitatea de a face mâncare în aer liber, gazdele foarte amabile și atente la micile detalii au făcut ca odihna să fie memorabilă.          </p>
+            Все было идеально, расположение идеальное, легкий доступ, сказочные пейзажи. Образцовая чистота, возможность готовить на природе, очень добрые и внимательные к мелочам хозяева сделали отдых незабываемым.
+          </p>
         </div>
       </div>
     </div>
@@ -310,7 +312,7 @@
 
   <!-- Reviews END -->
 
-
+  
   <!-- Contacts START -->
 
   <section id="contacts" class="contacts section-padding reveal">
@@ -318,16 +320,16 @@
       <div class="wrapper flex">
         <div class="side">
           <div class="introduction">
-            <h2 class="contact-us-title">Contacte</h2>
+            <h2 class="contact-us-title">Контакты</h2>
             <p class="subtext">
-              Mereu pe fir pentru a-ți răspunde. Nu ezita să ne contactezi dacă ai neclarități
+              Всегда на связи, чтобы ответить вам. Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы
             </p>
           </div>
           <table class="contact-data">
             <tr>
               <td class="icon"><i class="fas fa-phone"></i></td>
               <td>
-                <span class="title">Telefon</span>
+                <span class="title">Телефон</span>
                 <p class="subtext">
                   079 848 077
                 </p>
@@ -345,7 +347,7 @@
             <tr>
               <td class="icon"><i class="fas fa-map-marker-alt"></i></td>
               <td>
-                <span class="title">Adresa</span>
+                <span class="title">Адрес</span>
                 <p class="subtext">
                   Duruitoarea Veche, Moldova
                 </p>
@@ -354,10 +356,10 @@
             <tr>
               <td class="icon"><i class="fas fa-calendar"></i></td>
               <td>
-                <span class="title">Orar</span>
+                <span class="title">Расписание</span>
                 <p class="subtext">
-                  Lun-Dum - deschis 24 ore<br>
-                  Sâm - închis
+                  Пн-Вс - открыто 24 часа<br>
+                  Сб - закрыто
                 </p>
               </td>
             </tr>
@@ -373,58 +375,55 @@
   <!-- Contacts END -->
 
 
- 
-
-
   <!-- Footer START -->
 
   <footer>
     <div class="container flex">
       <div class="sibling">
-        <img class="logo" src="./images/logo.svg" alt="logo">
+        <img class="logo" src="../images/logo.svg" alt="logo">
       </div>
       <div class="sibling">
-        <h3>Menu</h3>
+        <h3>Меню</h3>
         <ul class="footer-nav-list">
           <li onclick="scrollToSection('greeting')">
             <i class="fas fa-home icon"></i>
-            <span>Principală</span>
+            <span>Главная</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('facilities')">
             <i class="fas fa-bed icon"></i>
-            <span>Facilități</span>
+            <span>Удобства</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('gallery')">
             <i class="fas fa-image icon"></i>
-            <span>Galerie</span>
+            <span>Галерея</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('reviews')">
             <i class="fas fa-user-alt icon"></i>
-            <span>Recenzii</span>
+            <span>Отзывы</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
           <li onclick="scrollToSection('contacts')">
             <i class="fas fa-address-book icon"></i>
-            <span>Contacte</span>
+            <span>Контакты</span>
             <i class="fas fa-arrow-right arrow"></i>
           </li>
         </ul>
       </div>
       <div class="sibling">
-        <h3>Aboneazăte la newsletter</h3>
+        <h3>Подписаться на новости</h3>
         <form action="#">
           <input class="input-text" placeholder="Email" type="email" name="email">
           <button type="submit" class="flex">
             <i class="far fa-envelope"></i>
-            <span>aplică</span>
+            <span>Подписаться</span>
           </button>
         </form>
       </div>
       <div class="sibling">
-        <h3>Rețele de socializare</h3>
+        <h3>Социальные сети</h3>
         <div class="flex social">
           <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fja-jp.facebook.com%2Fredescoperamoldova%2Fposts%2F3066626060116881%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/hanul_cu_noroc/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -434,9 +433,7 @@
     
     <div class="container disclaimer">
       <p>
-        Acest website a fost realizat în cadrul 
-        competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare 
-        Școală” și nu reflectă neapărat opinia proiectului.
+        Этот веб-сайт был создан в рамках конкурса «Tekwill Junior Ambassadors», организованного проектом «Tekwill в каждой школе», и не обязательно отражает мнение проекта.
       </p>
     </div>
   </footer>
@@ -445,12 +442,12 @@
 
   <!-- Scripts START -->
 
-  <script src="./scripts/header.js"></script>
-  <script src="./scripts/sidenav.js"></script>
-  <script src="./scripts/menu_links.js"></script>
-  <script src="./scripts/lang_dropdown.js"></script>
-  <script src="./scripts/content_reveal.js"></script>
-  <script src="./scripts/photoswipe_init.js"></script>
+  <script src="../scripts/header.js"></script>
+  <script src="../scripts/sidenav.js"></script>
+  <script src="../scripts/menu_links.js"></script>
+  <script src="../scripts/lang_dropdown.js"></script>
+  <script src="../scripts/content_reveal.js"></script>
+  <script src="../scripts/photoswipe_init.js"></script>
 
   <!-- Scripts END -->
 
