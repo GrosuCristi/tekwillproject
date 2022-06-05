@@ -24,8 +24,11 @@
       font-size: 1.4rem;
     }
 
+    .para{
+      font-size: 0.9rem;
+    }
     .title {
-      font-size: 1rem !important;
+      font-size: 1.1rem;
     }
   }
 
@@ -35,9 +38,19 @@
 }
 
 @media (min-width: 540px) {
+  body .facilities > .flex .sibling {
+
+    .para{
+      font-size: 1rem !important;
+    }
+    .title {
+      font-size: 1.2rem !important;
+    }
+  }
   body .contacts .wrapper .side {
     flex-direction: row;
     padding: 50px 20px;
+
 
     .introduction {
       margin: auto;
